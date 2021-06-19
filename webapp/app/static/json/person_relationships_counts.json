@@ -1,0 +1,3536 @@
+{
+ "Q182367": {
+  "opposes": 300,
+  "supports": 114,
+  "is_opposed": 563,
+  "is_supported": 133
+ },
+ "Q1688029": {
+  "opposes": 282,
+  "supports": 40,
+  "is_opposed": 22,
+  "is_supported": 7
+ },
+ "Q610788": {
+  "opposes": 238,
+  "supports": 187,
+  "is_opposed": 431,
+  "is_supported": 156
+ },
+ "Q439377": {
+  "opposes": 155,
+  "supports": 35,
+  "is_opposed": 38,
+  "is_supported": 29
+ },
+ "Q57615": {
+  "opposes": 142,
+  "supports": 86,
+  "is_opposed": 408,
+  "is_supported": 98
+ },
+ "Q1442096": {
+  "opposes": 136,
+  "supports": 19,
+  "is_opposed": 41,
+  "is_supported": 6
+ },
+ "Q57398": {
+  "opposes": 114,
+  "supports": 91,
+  "is_opposed": 667,
+  "is_supported": 183
+ },
+ "Q550243": {
+  "opposes": 109,
+  "supports": 52,
+  "is_opposed": 52,
+  "is_supported": 15
+ },
+ "Q156781": {
+  "opposes": 104,
+  "supports": 61,
+  "is_opposed": 41,
+  "is_supported": 66
+ },
+ "Q444059": {
+  "opposes": 81,
+  "supports": 34,
+  "is_opposed": 75,
+  "is_supported": 26
+ },
+ "Q612666": {
+  "opposes": 78,
+  "supports": 14,
+  "is_opposed": 19,
+  "is_supported": 5
+ },
+ "Q239248": {
+  "opposes": 72,
+  "supports": 50,
+  "is_opposed": 79,
+  "is_supported": 67
+ },
+ "Q2571494": {
+  "opposes": 72,
+  "supports": 24,
+  "is_opposed": 24,
+  "is_supported": 20
+ },
+ "Q3062583": {
+  "opposes": 72,
+  "supports": 4,
+  "is_opposed": 5,
+  "is_supported": 13
+ },
+ "Q58161": {
+  "opposes": 68,
+  "supports": 38,
+  "is_opposed": 140,
+  "is_supported": 45
+ },
+ "Q7378729": {
+  "opposes": 68,
+  "supports": 29,
+  "is_opposed": 98,
+  "is_supported": 79
+ },
+ "Q656518": {
+  "opposes": 65,
+  "supports": 27,
+  "is_opposed": 20,
+  "is_supported": 18
+ },
+ "Q10338219": {
+  "opposes": 63,
+  "supports": 9,
+  "is_opposed": 10,
+  "is_supported": 7
+ },
+ "Q10346767": {
+  "opposes": 62,
+  "supports": 25,
+  "is_opposed": 53,
+  "is_supported": 14
+ },
+ "Q6706787": {
+  "opposes": 61,
+  "supports": 19,
+  "is_opposed": 18,
+  "is_supported": 14
+ },
+ "Q737410": {
+  "opposes": 61,
+  "supports": 42,
+  "is_opposed": 44,
+  "is_supported": 28
+ },
+ "Q13582493": {
+  "opposes": 49,
+  "supports": 4,
+  "is_opposed": 36,
+  "is_supported": 6
+ },
+ "Q440355": {
+  "opposes": 44,
+  "supports": 15,
+  "is_opposed": 4,
+  "is_supported": 12
+ },
+ "Q15849": {
+  "opposes": 41,
+  "supports": 33,
+  "is_opposed": 67,
+  "is_supported": 39
+ },
+ "Q2844986": {
+  "opposes": 40,
+  "supports": 20,
+  "is_opposed": 24,
+  "is_supported": 3
+ },
+ "Q6756617": {
+  "opposes": 40,
+  "supports": 29,
+  "is_opposed": 38,
+  "is_supported": 21
+ },
+ "Q3069519": {
+  "opposes": 34,
+  "supports": 14,
+  "is_opposed": 26,
+  "is_supported": 22
+ },
+ "Q64688": {
+  "opposes": 34,
+  "supports": 12,
+  "is_opposed": 4,
+  "is_supported": 2
+ },
+ "Q1386216": {
+  "opposes": 33,
+  "supports": 10,
+  "is_opposed": 15,
+  "is_supported": 5
+ },
+ "Q266197": {
+  "opposes": 33,
+  "supports": 1,
+  "is_opposed": 3,
+  "is_supported": 1
+ },
+ "Q527722": {
+  "opposes": 33,
+  "supports": 15,
+  "is_opposed": 29,
+  "is_supported": 5
+ },
+ "Q769747": {
+  "opposes": 31,
+  "supports": 12,
+  "is_opposed": 12,
+  "is_supported": 3
+ },
+ "Q784504": {
+  "opposes": 31,
+  "supports": 13,
+  "is_opposed": 24,
+  "is_supported": 9
+ },
+ "Q15267277": {
+  "opposes": 30,
+  "supports": 5,
+  "is_opposed": 46,
+  "is_supported": 6
+ },
+ "Q21568721": {
+  "opposes": 30,
+  "supports": 5,
+  "is_opposed": 70,
+  "is_supported": 43
+ },
+ "Q611182": {
+  "opposes": 30,
+  "supports": 3,
+  "is_opposed": 10,
+  "is_supported": 1
+ },
+ "Q1340708": {
+  "opposes": 29,
+  "supports": 22,
+  "is_opposed": 10,
+  "is_supported": 3
+ },
+ "Q5716738": {
+  "opposes": 27,
+  "supports": 3,
+  "is_opposed": 3,
+  "is_supported": 4
+ },
+ "Q10324447": {
+  "opposes": 26,
+  "supports": 10,
+  "is_opposed": 6,
+  "is_supported": 6
+ },
+ "Q16940732": {
+  "opposes": 26,
+  "supports": 14,
+  "is_opposed": 22,
+  "is_supported": 23
+ },
+ "Q3186409": {
+  "opposes": 26,
+  "supports": 5,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q40722": {
+  "opposes": 26,
+  "supports": 8,
+  "is_opposed": 13,
+  "is_supported": 17
+ },
+ "Q5340560": {
+  "opposes": 26,
+  "supports": 3,
+  "is_opposed": 17,
+  "is_supported": 8
+ },
+ "Q2066785": {
+  "opposes": 25,
+  "supports": 8,
+  "is_opposed": 3,
+  "is_supported": 3
+ },
+ "Q13581707": {
+  "opposes": 24,
+  "supports": 3,
+  "is_opposed": 30,
+  "is_supported": 1
+ },
+ "Q1580316": {
+  "opposes": 24,
+  "supports": 1,
+  "is_opposed": 27,
+  "is_supported": 25
+ },
+ "Q4792848": {
+  "opposes": 22,
+  "supports": 1,
+  "is_opposed": 5,
+  "is_supported": 8
+ },
+ "Q6293647": {
+  "opposes": 22,
+  "supports": 6,
+  "is_opposed": 7,
+  "is_supported": 1
+ },
+ "Q2857730": {
+  "opposes": 21,
+  "supports": 14,
+  "is_opposed": 6,
+  "is_supported": 6
+ },
+ "Q567": {
+  "opposes": 21,
+  "supports": 24,
+  "is_opposed": 41,
+  "is_supported": 14
+ },
+ "Q76": {
+  "opposes": 21,
+  "supports": 18,
+  "is_opposed": 15,
+  "is_supported": 3
+ },
+ "Q10281462": {
+  "opposes": 20,
+  "supports": 4,
+  "is_opposed": 11,
+  "is_supported": 7
+ },
+ "Q10324736": {
+  "opposes": 19,
+  "supports": 1,
+  "is_opposed": 5,
+  "is_supported": 2
+ },
+ "Q524996": {
+  "opposes": 19,
+  "supports": 2,
+  "is_opposed": 37,
+  "is_supported": 10
+ },
+ "Q655391": {
+  "opposes": 19,
+  "supports": 4,
+  "is_opposed": 6,
+  "is_supported": 9
+ },
+ "Q925136": {
+  "opposes": 19,
+  "supports": 27,
+  "is_opposed": 33,
+  "is_supported": 27
+ },
+ "Q1709692": {
+  "opposes": 18,
+  "supports": 4,
+  "is_opposed": 12,
+  "is_supported": 5
+ },
+ "Q3183808": {
+  "opposes": 18,
+  "supports": 11,
+  "is_opposed": 11,
+  "is_supported": 2
+ },
+ "Q10338225": {
+  "opposes": 17,
+  "supports": 12,
+  "is_opposed": 7,
+  "is_supported": 4
+ },
+ "Q11764394": {
+  "opposes": 17,
+  "supports": 7,
+  "is_opposed": 7,
+  "is_supported": 3
+ },
+ "Q13576558": {
+  "opposes": 17,
+  "supports": 4,
+  "is_opposed": 5,
+  "is_supported": 3
+ },
+ "Q14982876": {
+  "opposes": 17,
+  "supports": 6,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q1555060": {
+  "opposes": 17,
+  "supports": 6,
+  "is_opposed": 9,
+  "is_supported": 4
+ },
+ "Q156780": {
+  "opposes": 17,
+  "supports": 26,
+  "is_opposed": 48,
+  "is_supported": 21
+ },
+ "Q21857888": {
+  "opposes": 17,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q3131021": {
+  "opposes": 17,
+  "supports": 4,
+  "is_opposed": 4,
+  "is_supported": 8
+ },
+ "Q22005939": {
+  "opposes": 16,
+  "supports": 4,
+  "is_opposed": 23,
+  "is_supported": 13
+ },
+ "Q69935603": {
+  "opposes": 16,
+  "supports": 3,
+  "is_opposed": 16,
+  "is_supported": 4
+ },
+ "Q1042803": {
+  "opposes": 15,
+  "supports": 3,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q529992": {
+  "opposes": 15,
+  "supports": 1,
+  "is_opposed": 25,
+  "is_supported": 6
+ },
+ "Q9618827": {
+  "opposes": 15,
+  "supports": 13,
+  "is_opposed": 3,
+  "is_supported": 2
+ },
+ "Q311440": {
+  "opposes": 14,
+  "supports": 23,
+  "is_opposed": 37,
+  "is_supported": 52
+ },
+ "Q456034": {
+  "opposes": 14,
+  "supports": 4,
+  "is_opposed": 8,
+  "is_supported": 4
+ },
+ "Q7747": {
+  "opposes": 14,
+  "supports": 8,
+  "is_opposed": 13,
+  "is_supported": 6
+ },
+ "Q10305694": {
+  "opposes": 13,
+  "supports": 2,
+  "is_opposed": 7,
+  "is_supported": 5
+ },
+ "Q13581124": {
+  "opposes": 13,
+  "supports": 8,
+  "is_opposed": 23,
+  "is_supported": 8
+ },
+ "Q40688": {
+  "opposes": 13,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 0
+ },
+ "Q6752494": {
+  "opposes": 13,
+  "supports": 3,
+  "is_opposed": 2,
+  "is_supported": 6
+ },
+ "Q6752747": {
+  "opposes": 13,
+  "supports": 5,
+  "is_opposed": 5,
+  "is_supported": 1
+ },
+ "Q10347430": {
+  "opposes": 12,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q1382641": {
+  "opposes": 12,
+  "supports": 7,
+  "is_opposed": 11,
+  "is_supported": 6
+ },
+ "Q1567582": {
+  "opposes": 12,
+  "supports": 0,
+  "is_opposed": 7,
+  "is_supported": 1
+ },
+ "Q22686": {
+  "opposes": 12,
+  "supports": 1,
+  "is_opposed": 30,
+  "is_supported": 12
+ },
+ "Q3075716": {
+  "opposes": 12,
+  "supports": 3,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q349505": {
+  "opposes": 12,
+  "supports": 6,
+  "is_opposed": 3,
+  "is_supported": 7
+ },
+ "Q4777562": {
+  "opposes": 12,
+  "supports": 3,
+  "is_opposed": 8,
+  "is_supported": 0
+ },
+ "Q4777638": {
+  "opposes": 12,
+  "supports": 15,
+  "is_opposed": 11,
+  "is_supported": 35
+ },
+ "Q611579": {
+  "opposes": 12,
+  "supports": 15,
+  "is_opposed": 8,
+  "is_supported": 12
+ },
+ "Q64685": {
+  "opposes": 12,
+  "supports": 6,
+  "is_opposed": 3,
+  "is_supported": 2
+ },
+ "Q18707871": {
+  "opposes": 11,
+  "supports": 1,
+  "is_opposed": 49,
+  "is_supported": 0
+ },
+ "Q2511022": {
+  "opposes": 11,
+  "supports": 4,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q3047625": {
+  "opposes": 11,
+  "supports": 4,
+  "is_opposed": 5,
+  "is_supported": 1
+ },
+ "Q73104708": {
+  "opposes": 11,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q9619510": {
+  "opposes": 11,
+  "supports": 6,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q157": {
+  "opposes": 10,
+  "supports": 8,
+  "is_opposed": 10,
+  "is_supported": 3
+ },
+ "Q15980671": {
+  "opposes": 10,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 6
+ },
+ "Q19409554": {
+  "opposes": 10,
+  "supports": 0,
+  "is_opposed": 10,
+  "is_supported": 1
+ },
+ "Q2857756": {
+  "opposes": 10,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 3
+ },
+ "Q3183843": {
+  "opposes": 10,
+  "supports": 0,
+  "is_opposed": 6,
+  "is_supported": 0
+ },
+ "Q3186200": {
+  "opposes": 10,
+  "supports": 2,
+  "is_opposed": 27,
+  "is_supported": 4
+ },
+ "Q3496740": {
+  "opposes": 10,
+  "supports": 4,
+  "is_opposed": 4,
+  "is_supported": 1
+ },
+ "Q381029": {
+  "opposes": 10,
+  "supports": 16,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q446042": {
+  "opposes": 10,
+  "supports": 4,
+  "is_opposed": 9,
+  "is_supported": 2
+ },
+ "Q5361358": {
+  "opposes": 10,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q57661": {
+  "opposes": 10,
+  "supports": 17,
+  "is_opposed": 18,
+  "is_supported": 27
+ },
+ "Q18697787": {
+  "opposes": 9,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q200941": {
+  "opposes": 9,
+  "supports": 17,
+  "is_opposed": 6,
+  "is_supported": 7
+ },
+ "Q357941": {
+  "opposes": 9,
+  "supports": 4,
+  "is_opposed": 7,
+  "is_supported": 0
+ },
+ "Q6761683": {
+  "opposes": 9,
+  "supports": 11,
+  "is_opposed": 10,
+  "is_supported": 31
+ },
+ "Q745134": {
+  "opposes": 9,
+  "supports": 3,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q9696942": {
+  "opposes": 9,
+  "supports": 9,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10292842": {
+  "opposes": 8,
+  "supports": 3,
+  "is_opposed": 2,
+  "is_supported": 4
+ },
+ "Q10294464": {
+  "opposes": 8,
+  "supports": 5,
+  "is_opposed": 5,
+  "is_supported": 4
+ },
+ "Q10310141": {
+  "opposes": 8,
+  "supports": 4,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10329706": {
+  "opposes": 8,
+  "supports": 7,
+  "is_opposed": 19,
+  "is_supported": 3
+ },
+ "Q10365280": {
+  "opposes": 8,
+  "supports": 6,
+  "is_opposed": 16,
+  "is_supported": 4
+ },
+ "Q10392072": {
+  "opposes": 8,
+  "supports": 4,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q11728611": {
+  "opposes": 8,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16336748": {
+  "opposes": 8,
+  "supports": 6,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q438868": {
+  "opposes": 8,
+  "supports": 9,
+  "is_opposed": 8,
+  "is_supported": 6
+ },
+ "Q7666117": {
+  "opposes": 8,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q9650912": {
+  "opposes": 8,
+  "supports": 1,
+  "is_opposed": 3,
+  "is_supported": 2
+ },
+ "Q10294766": {
+  "opposes": 7,
+  "supports": 2,
+  "is_opposed": 6,
+  "is_supported": 2
+ },
+ "Q10308185": {
+  "opposes": 7,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10335529": {
+  "opposes": 7,
+  "supports": 5,
+  "is_opposed": 4,
+  "is_supported": 3
+ },
+ "Q11767932": {
+  "opposes": 7,
+  "supports": 6,
+  "is_opposed": 4,
+  "is_supported": 2
+ },
+ "Q11794196": {
+  "opposes": 7,
+  "supports": 2,
+  "is_opposed": 3,
+  "is_supported": 3
+ },
+ "Q1337232": {
+  "opposes": 7,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q16336375": {
+  "opposes": 7,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q28650390": {
+  "opposes": 7,
+  "supports": 2,
+  "is_opposed": 12,
+  "is_supported": 7
+ },
+ "Q42851646": {
+  "opposes": 7,
+  "supports": 8,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q56352307": {
+  "opposes": 7,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q8077028": {
+  "opposes": 7,
+  "supports": 8,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q921602": {
+  "opposes": 7,
+  "supports": 1,
+  "is_opposed": 9,
+  "is_supported": 0
+ },
+ "Q993533": {
+  "opposes": 7,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 3
+ },
+ "Q10263990": {
+  "opposes": 6,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q10309880": {
+  "opposes": 6,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10321580": {
+  "opposes": 6,
+  "supports": 4,
+  "is_opposed": 3,
+  "is_supported": 3
+ },
+ "Q10325930": {
+  "opposes": 6,
+  "supports": 6,
+  "is_opposed": 0,
+  "is_supported": 12
+ },
+ "Q10338167": {
+  "opposes": 6,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q11728715": {
+  "opposes": 6,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q16940727": {
+  "opposes": 6,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16940875": {
+  "opposes": 6,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q21140733": {
+  "opposes": 6,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q2118027": {
+  "opposes": 6,
+  "supports": 7,
+  "is_opposed": 34,
+  "is_supported": 13
+ },
+ "Q295049": {
+  "opposes": 6,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 3
+ },
+ "Q3186389": {
+  "opposes": 6,
+  "supports": 5,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q65498266": {
+  "opposes": 6,
+  "supports": 8,
+  "is_opposed": 4,
+  "is_supported": 1
+ },
+ "Q732154": {
+  "opposes": 6,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 3
+ },
+ "Q9619875": {
+  "opposes": 6,
+  "supports": 3,
+  "is_opposed": 6,
+  "is_supported": 1
+ },
+ "Q16336787": {
+  "opposes": 5,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q16545093": {
+  "opposes": 5,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q17318300": {
+  "opposes": 5,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q17496474": {
+  "opposes": 5,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q264766": {
+  "opposes": 5,
+  "supports": 0,
+  "is_opposed": 8,
+  "is_supported": 2
+ },
+ "Q28555817": {
+  "opposes": 5,
+  "supports": 4,
+  "is_opposed": 3,
+  "is_supported": 1
+ },
+ "Q312015": {
+  "opposes": 5,
+  "supports": 2,
+  "is_opposed": 12,
+  "is_supported": 10
+ },
+ "Q329": {
+  "opposes": 5,
+  "supports": 5,
+  "is_opposed": 6,
+  "is_supported": 9
+ },
+ "Q4007647": {
+  "opposes": 5,
+  "supports": 2,
+  "is_opposed": 4,
+  "is_supported": 2
+ },
+ "Q43422874": {
+  "opposes": 5,
+  "supports": 3,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q4777532": {
+  "opposes": 5,
+  "supports": 2,
+  "is_opposed": 22,
+  "is_supported": 4
+ },
+ "Q586749": {
+  "opposes": 5,
+  "supports": 0,
+  "is_opposed": 12,
+  "is_supported": 6
+ },
+ "Q60780752": {
+  "opposes": 5,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9207629": {
+  "opposes": 5,
+  "supports": 4,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q9212694": {
+  "opposes": 5,
+  "supports": 2,
+  "is_opposed": 5,
+  "is_supported": 0
+ },
+ "Q10263981": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 0
+ },
+ "Q10281337": {
+  "opposes": 4,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10281366": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 9,
+  "is_supported": 8
+ },
+ "Q10309118": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10347660": {
+  "opposes": 4,
+  "supports": 3,
+  "is_opposed": 7,
+  "is_supported": 2
+ },
+ "Q103998211": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 1
+ },
+ "Q11764395": {
+  "opposes": 4,
+  "supports": 5,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q11860": {
+  "opposes": 4,
+  "supports": 3,
+  "is_opposed": 4,
+  "is_supported": 4
+ },
+ "Q1318666": {
+  "opposes": 4,
+  "supports": 6,
+  "is_opposed": 6,
+  "is_supported": 1
+ },
+ "Q14983130": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 20,
+  "is_supported": 1
+ },
+ "Q1518240": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q16019": {
+  "opposes": 4,
+  "supports": 5,
+  "is_opposed": 14,
+  "is_supported": 2
+ },
+ "Q16493915": {
+  "opposes": 4,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q17496480": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q23904964": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 0
+ },
+ "Q2913325": {
+  "opposes": 4,
+  "supports": 2,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q3021885": {
+  "opposes": 4,
+  "supports": 4,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q3041550": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q30934991": {
+  "opposes": 4,
+  "supports": 4,
+  "is_opposed": 3,
+  "is_supported": 8
+ },
+ "Q3179722": {
+  "opposes": 4,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q37181": {
+  "opposes": 4,
+  "supports": 10,
+  "is_opposed": 17,
+  "is_supported": 17
+ },
+ "Q472589": {
+  "opposes": 4,
+  "supports": 10,
+  "is_opposed": 3,
+  "is_supported": 0
+ },
+ "Q47539817": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q4777608": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q5043745": {
+  "opposes": 4,
+  "supports": 10,
+  "is_opposed": 11,
+  "is_supported": 3
+ },
+ "Q523997": {
+  "opposes": 4,
+  "supports": 0,
+  "is_opposed": 6,
+  "is_supported": 1
+ },
+ "Q6205661": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q66688384": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q6706856": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q85871588": {
+  "opposes": 4,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q85876953": {
+  "opposes": 4,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q9697231": {
+  "opposes": 4,
+  "supports": 10,
+  "is_opposed": 10,
+  "is_supported": 2
+ },
+ "Q10263917": {
+  "opposes": 3,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q10281394": {
+  "opposes": 3,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 1
+ },
+ "Q10309911": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10321568": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q1382767": {
+  "opposes": 3,
+  "supports": 2,
+  "is_opposed": 22,
+  "is_supported": 6
+ },
+ "Q16336736": {
+  "opposes": 3,
+  "supports": 4,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16337382": {
+  "opposes": 3,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q16485477": {
+  "opposes": 3,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q20017756": {
+  "opposes": 3,
+  "supports": 0,
+  "is_opposed": 14,
+  "is_supported": 5
+ },
+ "Q2344342": {
+  "opposes": 3,
+  "supports": 3,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q23836571": {
+  "opposes": 3,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q2469453": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q25440961": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 10,
+  "is_supported": 6
+ },
+ "Q2643773": {
+  "opposes": 3,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q3052772": {
+  "opposes": 3,
+  "supports": 8,
+  "is_opposed": 10,
+  "is_supported": 15
+ },
+ "Q3069515": {
+  "opposes": 3,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3119570": {
+  "opposes": 3,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 3
+ },
+ "Q3179732": {
+  "opposes": 3,
+  "supports": 0,
+  "is_opposed": 5,
+  "is_supported": 2
+ },
+ "Q463533": {
+  "opposes": 3,
+  "supports": 4,
+  "is_opposed": 4,
+  "is_supported": 2
+ },
+ "Q4777527": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 5
+ },
+ "Q4777639": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 3
+ },
+ "Q58132": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 3
+ },
+ "Q60114": {
+  "opposes": 3,
+  "supports": 23,
+  "is_opposed": 0,
+  "is_supported": 9
+ },
+ "Q971595": {
+  "opposes": 3,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q98446386": {
+  "opposes": 3,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q101584344": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10270621": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10272128": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10281523": {
+  "opposes": 2,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 3
+ },
+ "Q10287923": {
+  "opposes": 2,
+  "supports": 4,
+  "is_opposed": 3,
+  "is_supported": 3
+ },
+ "Q10308054": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q10308689": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10308703": {
+  "opposes": 2,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10321414": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10347715": {
+  "opposes": 2,
+  "supports": 5,
+  "is_opposed": 1,
+  "is_supported": 6
+ },
+ "Q10389774": {
+  "opposes": 2,
+  "supports": 5,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10392723": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q10394994": {
+  "opposes": 2,
+  "supports": 2,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q10395757": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q11764393": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q1353499": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 7,
+  "is_supported": 0
+ },
+ "Q16337119": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16489803": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16491519": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16493646": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16498018": {
+  "opposes": 2,
+  "supports": 2,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q16537126": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17496469": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q19360799": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 4,
+  "is_supported": 4
+ },
+ "Q2119928": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q23778050": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 6,
+  "is_supported": 0
+ },
+ "Q23836573": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q23905015": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q250919": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 4,
+  "is_supported": 12
+ },
+ "Q25419872": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q2831797": {
+  "opposes": 2,
+  "supports": 5,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q2868303": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 7,
+  "is_supported": 7
+ },
+ "Q3018178": {
+  "opposes": 2,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q3081949": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q3116195": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q3331969": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3540630": {
+  "opposes": 2,
+  "supports": 6,
+  "is_opposed": 0,
+  "is_supported": 3
+ },
+ "Q38484": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q4287613": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q4576565": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q48856511": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q5041962": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 2
+ },
+ "Q505685": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q52161254": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q5444915": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 3
+ },
+ "Q5511406": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 5,
+  "is_supported": 2
+ },
+ "Q57313": {
+  "opposes": 2,
+  "supports": 6,
+  "is_opposed": 14,
+  "is_supported": 5
+ },
+ "Q61195608": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q65498301": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q66688848": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q66741757": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q6752420": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 10,
+  "is_supported": 4
+ },
+ "Q715046": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q7155277": {
+  "opposes": 2,
+  "supports": 6,
+  "is_opposed": 3,
+  "is_supported": 10
+ },
+ "Q729402": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q73400540": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q75062": {
+  "opposes": 2,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q85876514": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q9029075": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 0
+ },
+ "Q9169371": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9594142": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q9604772": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q968223": {
+  "opposes": 2,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9697042": {
+  "opposes": 2,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q101537534": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10261183": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10263926": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10284941": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10298152": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10308688": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q10309167": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10309299": {
+  "opposes": 1,
+  "supports": 7,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10309301": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10310170": {
+  "opposes": 1,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q10310185": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10310225": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10310607": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q10310733": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10311770": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10312177": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q10313391": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10313446": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10319949": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 3
+ },
+ "Q10322008": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10322865": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 4,
+  "is_supported": 1
+ },
+ "Q10324087": {
+  "opposes": 1,
+  "supports": 6,
+  "is_opposed": 3,
+  "is_supported": 4
+ },
+ "Q10326209": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10328972": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10329776": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10329879": {
+  "opposes": 1,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10334426": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10343483": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10347320": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10365301": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10389340": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10819": {
+  "opposes": 1,
+  "supports": 5,
+  "is_opposed": 2,
+  "is_supported": 5
+ },
+ "Q11728720": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q1317": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q1392332": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q15105537": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q16336739": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 8,
+  "is_supported": 2
+ },
+ "Q16337641": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q16491101": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q1708982": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17318177": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17420661": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17492584": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q17496450": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17496473": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q180801": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q202794": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q21290312": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q21290358": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q21582227": {
+  "opposes": 1,
+  "supports": 2,
+  "is_opposed": 4,
+  "is_supported": 7
+ },
+ "Q22807807": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q23797153": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 1
+ },
+ "Q23799289": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q23904994": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q24286982": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q2518": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q27093788": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q275677": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 3,
+  "is_supported": 4
+ },
+ "Q28677402": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q28973799": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q2907553": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q294460": {
+  "opposes": 1,
+  "supports": 2,
+  "is_opposed": 9,
+  "is_supported": 7
+ },
+ "Q3060511": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q30934473": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3186473": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3302199": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3321239": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q34211": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q3556927": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q364934": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q365986": {
+  "opposes": 1,
+  "supports": 4,
+  "is_opposed": 5,
+  "is_supported": 2
+ },
+ "Q367010": {
+  "opposes": 1,
+  "supports": 2,
+  "is_opposed": 9,
+  "is_supported": 8
+ },
+ "Q368644": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q42297127": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q42305316": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q4685594": {
+  "opposes": 1,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q47139": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q4723726": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q4777535": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q482868": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q5041861": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q5279222": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q5290424": {
+  "opposes": 1,
+  "supports": 3,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q5310427": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q590298": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q60206": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q60999934": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q61944361": {
+  "opposes": 1,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q64578215": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q65174706": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q65496709": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q65497945": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q65498002": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q65499184": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q66713687": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q6761173": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 5,
+  "is_supported": 1
+ },
+ "Q69916868": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q712532": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 4
+ },
+ "Q714076": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q714173": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q722614": {
+  "opposes": 1,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 4
+ },
+ "Q72426658": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q8273607": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9159871": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9184746": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q91901804": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q9268064": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9601813": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9602307": {
+  "opposes": 1,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q9629375": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q983957": {
+  "opposes": 1,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q41395": {
+  "opposes": 0,
+  "supports": 8,
+  "is_opposed": 3,
+  "is_supported": 9
+ },
+ "Q1253": {
+  "opposes": 0,
+  "supports": 5,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10310204": {
+  "opposes": 0,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16494439": {
+  "opposes": 0,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q2073164": {
+  "opposes": 0,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q208355": {
+  "opposes": 0,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q22958314": {
+  "opposes": 0,
+  "supports": 3,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10309889": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10329729": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10346590": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10346718": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10363320": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q1262756": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q16940806": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q18708029": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q1878439": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q207": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q21600813": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q22958361": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q30930777": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q6526652": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q9619105": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9697337": {
+  "opposes": 0,
+  "supports": 2,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q101441727": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10272593": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q10285488": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10308947": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10311869": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10318815": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10321558": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10321579": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10324724": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10334416": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q10334505": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q10338221": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10347324": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q10361221": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 4,
+  "is_supported": 1
+ },
+ "Q10365313": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q1339831": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q1378001": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q13989269": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q15833722": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q16143885": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q16336402": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q16337640": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16491360": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q16495518": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 3,
+  "is_supported": 2
+ },
+ "Q16855282": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17420667": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17420856": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q17420864": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q17420886": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q192": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q19607921": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q20045850": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q206147": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q231084": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q235916": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q25420666": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q26256214": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q2857765": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q3038797": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3129652": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q3132528": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q3154816": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q3186526": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3290963": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q3745041": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q377683": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q388965": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q4720890": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q4777590": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q48879362": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q6291307": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q65499243": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q7702196": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q777954": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q7925828": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 3,
+  "is_supported": 0
+ },
+ "Q8440": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q85712941": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q85853594": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q88196412": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9158198": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9185480": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q9545": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q9619988": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q9620073": {
+  "opposes": 0,
+  "supports": 1,
+  "is_opposed": 0,
+  "is_supported": 0
+ },
+ "Q10304982": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 4,
+  "is_supported": 8
+ },
+ "Q9594512": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 4,
+  "is_supported": 0
+ },
+ "Q12983": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 0
+ },
+ "Q367910": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 3,
+  "is_supported": 4
+ },
+ "Q10284869": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q10347467": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q265277": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q2857763": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q2939466": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q43370959": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q4777606": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q59336865": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 1
+ },
+ "Q65497966": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 0
+ },
+ "Q74256324": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 2,
+  "is_supported": 2
+ },
+ "Q100319459": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10303368": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10307287": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10309512": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10309895": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10325927": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10334548": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10389338": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q10707": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q11256": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q11728710": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q123923": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q16337835": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q16492084": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q17024746": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q17270451": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q17420882": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q17725191": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q18564749": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q185771": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q22298080": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q23290826": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q235992": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q23800376": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q25694309": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q26256253": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q28973801": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q3286873": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 1
+ },
+ "Q336238": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q4681974": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q543349": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q5482965": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q5484146": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q59572077": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q6123866": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q61880600": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q65497451": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q65499244": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q6949714": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q85875924": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 0
+ },
+ "Q946": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 1,
+  "is_supported": 2
+ },
+ "Q481124": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 9
+ },
+ "Q22252746": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 3
+ },
+ "Q312831": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 3
+ },
+ "Q348880": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 3
+ },
+ "Q10321431": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q10346704": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q10357633": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q11665": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q30934717": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q3179729": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q72618895": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 2
+ },
+ "Q10270753": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10272634": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10281519": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10300977": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10303811": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10308196": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10310517": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10310636": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10316578": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q1033303": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10334395": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10334488": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10346748": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q10390": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q11708836": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q11728561": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q1389840": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q17285265": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q17420848": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q20974230": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q235866": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q27134712": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q334835": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q3420579": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q349583": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q37349": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q39659": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q44851": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q4681977": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q47539921": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q485946": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q518861": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q57392": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q64523123": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q65161985": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q736289": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q8023": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q85179710": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ },
+ "Q9619601": {
+  "opposes": 0,
+  "supports": 0,
+  "is_opposed": 0,
+  "is_supported": 1
+ }
+}
