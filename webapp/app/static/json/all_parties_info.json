@@ -2,9 +2,9 @@
     {
         "wiki_id": "Q595575",
         "party_label": "Partido Social Democrata",
-        "party_logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido%20Social%20Democrata%20Logo.svg",
+        "party_logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20PSD%20cor.PNG",
         "party_country": "Q45",
-        "nr_personalities": "158"
+        "nr_personalities": "151"
     },
     {
         "wiki_id": "Q847263",
@@ -16,7 +16,7 @@
     {
         "wiki_id": "Q1054298",
         "party_label": "CDS - Partido Popular",
-        "party_logo": "https://commons.wikimedia.org/wiki/Special:FilePath/CDS%20%E2%80%93%20People%27s%20Party%20logo.svg",
+        "party_logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cds%20simbolo%202.png",
         "party_country": "Q45",
         "nr_personalities": "41"
     },
@@ -25,7 +25,7 @@
         "party_label": "Bloco de Esquerda",
         "party_logo": "https://commons.wikimedia.org/wiki/Special:FilePath/LeftBloc.svg",
         "party_country": "Q45",
-        "nr_personalities": "22"
+        "nr_personalities": "21"
     },
     {
         "wiki_id": "Q769829",
@@ -39,18 +39,25 @@
         "party_label": "pol\u00edtico sem partido",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
-        "nr_personalities": "11"
+        "nr_personalities": "13"
     },
     {
         "wiki_id": "Q29468",
         "party_label": "Partido Republicano",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
-        "nr_personalities": "4"
+        "nr_personalities": "8"
     },
     {
         "wiki_id": "Q1322751",
         "party_label": "Movimento Democr\u00e1tico Brasileiro",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "3"
+    },
+    {
+        "wiki_id": "Q173152",
+        "party_label": "Uni\u00e3o por um Movimento Popular",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "3"
@@ -91,11 +98,11 @@
         "nr_personalities": "3"
     },
     {
-        "wiki_id": "Q1546030",
-        "party_label": "Partido da Terra",
+        "wiki_id": "Q178888",
+        "party_label": "Fatah",
         "party_logo": "/static/images/no_picture.jpg",
-        "party_country": "Q45",
-        "nr_personalities": "3"
+        "party_country": null,
+        "nr_personalities": "2"
     },
     {
         "wiki_id": "Q641691",
@@ -105,8 +112,36 @@
         "nr_personalities": "2"
     },
     {
+        "wiki_id": "Q20012759",
+        "party_label": "Os Republicanos",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "2"
+    },
+    {
+        "wiki_id": "Q776352",
+        "party_label": "Partido Africano para a Independ\u00eancia da Guin\u00e9 e Cabo Verde",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "2"
+    },
+    {
+        "wiki_id": "Q371402",
+        "party_label": "Partido Comunista de Cuba",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "2"
+    },
+    {
         "wiki_id": "Q9626",
         "party_label": "Partido Conservador",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "2"
+    },
+    {
+        "wiki_id": "Q29552",
+        "party_label": "Partido Democrata",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "2"
@@ -140,8 +175,15 @@
         "nr_personalities": "2"
     },
     {
-        "wiki_id": "Q173152",
-        "party_label": "Uni\u00e3o por um Movimento Popular",
+        "wiki_id": "Q1052584",
+        "party_label": "Reagrupamento para a Rep\u00fablica",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "2"
+    },
+    {
+        "wiki_id": "Q1904825",
+        "party_label": "Uni\u00e3o dos Democratas pela Rep\u00fablica",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "2"
@@ -165,6 +207,20 @@
         "party_label": "Coliga\u00e7\u00e3o da Esquerda Radical",
         "party_logo": "https://commons.wikimedia.org/wiki/Special:FilePath/SYRIZA%20logo%202020.svg",
         "party_country": "Q41",
+        "nr_personalities": "2"
+    },
+    {
+        "wiki_id": "Q1546030",
+        "party_label": "Partido da Terra",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": "Q45",
+        "nr_personalities": "2"
+    },
+    {
+        "wiki_id": "Q935996",
+        "party_label": "Frente Revolucion\u00e1ria de Timor-Leste Independente",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": "Q574",
         "nr_personalities": "2"
     },
     {
@@ -196,6 +252,13 @@
         "nr_personalities": "1"
     },
     {
+        "wiki_id": "Q1126036",
+        "party_label": "Congresso Nacional para a Reconstru\u00e7\u00e3o de Timor-Leste",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "1"
+    },
+    {
         "wiki_id": "Q23731823",
         "party_label": "Em Marcha!",
         "party_logo": "/static/images/no_picture.jpg",
@@ -203,8 +266,8 @@
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q178888",
-        "party_label": "Fatah",
+        "wiki_id": "Q2792033",
+        "party_label": "Escolha C\u00edvica",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
@@ -252,15 +315,15 @@
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q20012759",
-        "party_label": "Os Republicanos",
+        "wiki_id": "Q497464",
+        "party_label": "Partido Africano da Independ\u00eancia de Cabo Verde",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q776352",
-        "party_label": "Partido Africano para a Independ\u00eancia da Guin\u00e9 e Cabo Verde",
+        "wiki_id": "Q179933",
+        "party_label": "Partido Baath",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
@@ -287,15 +350,15 @@
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q371402",
-        "party_label": "Partido Comunista de Cuba",
+        "wiki_id": "Q841133",
+        "party_label": "Partido Nacional Democr\u00e1tico",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q29552",
-        "party_label": "Partido Democrata",
+        "wiki_id": "Q1513692",
+        "party_label": "Partido Nacional Republicano",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
@@ -343,8 +406,8 @@
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q429972",
-        "party_label": "Partido da Mobiliza\u00e7\u00e3o Nacional",
+        "wiki_id": "Q1322897",
+        "party_label": "Partido da Social Democracia Brasileira",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
@@ -371,13 +434,6 @@
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q1052584",
-        "party_label": "Reagrupamento para a Rep\u00fablica",
-        "party_logo": "/static/images/no_picture.jpg",
-        "party_country": null,
-        "nr_personalities": "1"
-    },
-    {
         "wiki_id": "Q151469",
         "party_label": "R\u00fassia Unida",
         "party_logo": "/static/images/no_picture.jpg",
@@ -392,8 +448,29 @@
         "nr_personalities": "1"
     },
     {
+        "wiki_id": "Q954010",
+        "party_label": "Uni\u00e3o Nacional",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "1"
+    },
+    {
         "wiki_id": "Q1910161",
         "party_label": "Uni\u00e3o Nacional Africana do Zimb\u00e1bue - Frente Patri\u00f3tica",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "1"
+    },
+    {
+        "wiki_id": "Q28699",
+        "party_label": "Uni\u00e3o Nacional para a Independ\u00eancia Total de Angola",
+        "party_logo": "/static/images/no_picture.jpg",
+        "party_country": null,
+        "nr_personalities": "1"
+    },
+    {
+        "wiki_id": "Q8897236",
+        "party_label": "Uni\u00e3o Socialista \u00c1rabe",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
@@ -406,8 +483,8 @@
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q1904825",
-        "party_label": "Uni\u00e3o dos Democratas pela Rep\u00fablica",
+        "wiki_id": "Q7223378",
+        "party_label": "Uni\u00e3o para a Nova Rep\u00fablica",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
         "nr_personalities": "1"
@@ -424,13 +501,6 @@
         "party_label": "al-Qaeda",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": null,
-        "nr_personalities": "1"
-    },
-    {
-        "wiki_id": "Q1276673",
-        "party_label": "Movimento de Liberta\u00e7\u00e3o de S\u00e3o Tom\u00e9 e Pr\u00edncipe \u2013 Partido Social Democrata",
-        "party_logo": "/static/images/no_picture.jpg",
-        "party_country": "Q1039",
         "nr_personalities": "1"
     },
     {
@@ -581,8 +651,8 @@
         "nr_personalities": "1"
     },
     {
-        "wiki_id": "Q2119074",
-        "party_label": "Uni\u00e3o Democr\u00e1tica Popular",
+        "wiki_id": "Q65164025",
+        "party_label": "RIR - Reagir Incluir Reciclar",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": "Q45",
         "nr_personalities": "1"
@@ -592,13 +662,6 @@
         "party_label": "Uni\u00e3o da Esquerda para a Democracia Socialista",
         "party_logo": "/static/images/no_picture.jpg",
         "party_country": "Q45",
-        "nr_personalities": "1"
-    },
-    {
-        "wiki_id": "Q935996",
-        "party_label": "Frente Revolucion\u00e1ria de Timor-Leste Independente",
-        "party_logo": "/static/images/no_picture.jpg",
-        "party_country": "Q574",
         "nr_personalities": "1"
     }
 ]

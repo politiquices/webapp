@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import request, jsonify, render_template
 
-from politiquices.nlp.utils.utils import read_ground_truth
-from politiquices.webapp.webapp.config import entities_batch_size
-from politiquices.webapp.webapp.lib.utils import get_info
-from politiquices.webapp.webapp.lib.graph import get_entity_network, get_network
-from politiquices.webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
-from politiquices.webapp.webapp.lib.render_queries import (
+from utils.utils import read_ground_truth
+from webapp.webapp.config import entities_batch_size
+from webapp.webapp.lib.utils import get_info
+from webapp.webapp.lib.graph import get_entity_network, get_network
+from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
+from webapp.webapp.lib.render_queries import (
     party_vs_party,
     person_vs_party,
     party_vs_person,
@@ -17,9 +17,10 @@ from politiquices.webapp.webapp.lib.render_queries import (
     get_stats
 )
 
-from politiquices.webapp.webapp.lib.sparql_queries import (
+from webapp.webapp.lib.sparql_queries import (
     get_entities_without_image,
-    get_relationships_to_annotate, personalities_only_with_other,
+    get_relationships_to_annotate,
+    personalities_only_with_other,
 )
 
 

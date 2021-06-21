@@ -1,8 +1,8 @@
 from collections import defaultdict
 
-from politiquices.webapp.webapp.lib.cache import wiki_id_info
-from politiquices.webapp.webapp.lib.neo4j_connect import Neo4jConnection
-from politiquices.webapp.webapp.lib.utils import get_short_name
+from webapp.webapp.lib.cache import wiki_id_info
+from webapp.webapp.lib.neo4j_connect import Neo4jConnection
+from webapp.webapp.lib.utils import get_short_name
 
 
 def query_neo4j(query):

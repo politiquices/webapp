@@ -4,19 +4,19 @@ from functools import lru_cache
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-from politiquices.webapp.webapp.lib.data_models import (
+from webapp.webapp.lib.data_models import (
     OfficePosition,
     Person,
     PoliticalParty
 )
-from politiquices.webapp.webapp.config import (
+from webapp.webapp.config import (
     live_wikidata,
     no_image,
     politiquices_endpoint,
     ps_logo,
     wikidata_endpoint
 )
-from politiquices.webapp.webapp.lib.utils import make_https, invert_relationship
+from webapp.webapp.lib.utils import make_https, invert_relationship
 
 POLITIQUICES_PREFIXES = """
     PREFIX politiquices: <http://www.politiquices.pt/>
@@ -305,7 +305,7 @@ def get_all_parties_and_members_with_relationships():
 
 
 def get_total_nr_articles_for_each_person():
-    # NOTE: 'ent1_other_ent2' and 'ent2_other_ent1' relationships are being discarded
+    # NOTE: 'other' relationships are discarded
     query = """
         SELECT ?person (COUNT(*) as ?count)
         WHERE {
@@ -629,7 +629,7 @@ def get_person_relationships(wiki_id):
                 other_ent_name = e["ent2_str"]["value"].split("/")[-1]
                 focus_ent = e["ent1_str"]["value"].split("/")[-1]
 
-        elif e["rel_type"]["value"] == "ent1_other_ent2":
+        elif e["rel_type"]["value"] == "other":
 
             if wiki_id == ent1_wiki:
                 rel_type = "other"
@@ -642,20 +642,6 @@ def get_person_relationships(wiki_id):
                 other_ent_url = ent1_wiki
                 other_ent_name = e["ent1_str"]["value"].split("/")[-1]
                 focus_ent = e["ent2_str"]["value"].split("/")[-1]
-
-        elif e["rel_type"]["value"] == "ent2_other_ent1":
-
-            if wiki_id == ent2_wiki:
-                rel_type = "other"
-                other_ent_url = ent1_wiki
-                other_ent_name = e["ent1_str"]["value"].split("/")[-1]
-                focus_ent = e["ent2_str"]["value"].split("/")[-1]
-
-            elif wiki_id == ent1_wiki:
-                rel_type = "other_by"
-                other_ent_url = ent2_wiki
-                other_ent_name = e["ent2_str"]["value"].split("/")[-1]
-                focus_ent = e["ent1_str"]["value"].split("/")[-1]
 
         else:
             raise Exception(e["rel_type"]["value"] + " not known")

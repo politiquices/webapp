@@ -1,5 +1,6 @@
 import re
 
+
 def make_https(url):
     return re.sub(r'http://', "https://", url)
 

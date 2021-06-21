@@ -1,6 +1,6 @@
 import json
 from collections import defaultdict
-from politiquices.webapp.webapp.lib.sparql_queries import get_graph_edges
+from webapp.webapp.lib.sparql_queries import get_graph_edges
 
 node_info = dict()
 

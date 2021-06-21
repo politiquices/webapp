@@ -1,8 +1,8 @@
 import json
 from collections import defaultdict
 
-from politiquices.webapp.webapp.config import static_data
-from politiquices.webapp.webapp.lib.sparql_queries import (
+from webapp.webapp.config import static_data
+from webapp.webapp.lib.sparql_queries import (
     get_all_parties_and_members_with_relationships,
     get_nr_relationships_as_subject,
     get_nr_relationships_as_target,
