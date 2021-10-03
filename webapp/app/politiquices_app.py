@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import request, jsonify, render_template
 
-from utils.utils import read_ground_truth
-from webapp.webapp.config import entities_batch_size
-from webapp.webapp.lib.utils import get_info
-from webapp.webapp.lib.graph import get_entity_network, get_network
-from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
-from webapp.webapp.lib.render_queries import (
+from lib.utils import read_ground_truth
+from lib.config import entities_batch_size
+from lib.utils import get_info
+from lib.graph import get_entity_network, get_network
+from lib.cache import all_entities_info, all_parties_info, chave_publico
+from lib.render_queries import (
     party_vs_party,
     person_vs_party,
     party_vs_person,
@@ -17,7 +17,7 @@ from webapp.webapp.lib.render_queries import (
     get_stats
 )
 
-from webapp.webapp.lib.sparql_queries import (
+from lib.sparql_queries import (
     get_entities_without_image,
     get_relationships_to_annotate,
     personalities_only_with_other,
@@ -110,7 +110,7 @@ def graph():
     freq_min = 10
     freq_max = 30
 
-    print(request.args)
+    print("args: ", request.args)
 
     # if not arguments were given, render graph with default arguments
     if not list(request.args.items()):

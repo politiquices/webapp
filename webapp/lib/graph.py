@@ -1,12 +1,13 @@
 from collections import defaultdict
 
-from webapp.webapp.lib.cache import wiki_id_info
-from webapp.webapp.lib.neo4j_connect import Neo4jConnection
-from webapp.webapp.lib.utils import get_short_name
+from lib.cache import wiki_id_info
+from lib.neo4j_connect import Neo4jConnection
+from lib.utils import get_short_name
+from lib.config import neo4j_endpoint
 
 
 def query_neo4j(query):
-    conn = Neo4jConnection(uri="bolt://localhost:7687", user="neo4j", pwd="s3cr3t")
+    conn = Neo4jConnection(uri=neo4j_endpoint, user="neo4j", pwd="s3cr3t")
     results = conn.query(query)
     conn.close()
     return results

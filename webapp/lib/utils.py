@@ -208,3 +208,22 @@ def get_info(wiki_id, all_entities_info, all_parties_info):
 
     if info := [entry for entry in all_entities_info if entry["wiki_id"] == wiki_id]:
         return info[0], "person"
+
+
+def read_ground_truth(filename, delimiter="\t"):
+    data = []
+    with open(filename, newline="") as csv_file:
+        titles = csv.reader(csv_file, delimiter=delimiter)
+        for row in titles:
+            data.append({
+                "title": row[0],
+                "label": row[1],
+                "date": row[2],
+                "url": row[3],
+                "ent1": row[4],
+                "ent2": row[5],
+                "ent1_id": row[6],
+                "ent2_id": row[7],
+            })
+
+    return data

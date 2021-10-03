@@ -1,8 +1,8 @@
 import json
 from collections import defaultdict
 
-from webapp.webapp.config import static_data
-from webapp.webapp.lib.sparql_queries import (
+from lib.config import static_data
+from lib.sparql_queries import (
     get_all_parties_and_members_with_relationships,
     get_nr_relationships_as_subject,
     get_nr_relationships_as_target,
@@ -52,7 +52,7 @@ def personalities_json_cache():
     with open(static_data + "all_entities_info.json", "w") as f_out:
         json.dump(per_data, f_out, indent=4)
 
-    with open("webapp/shorter_names_mapping.json", "r") as f_out:
+    with open("shorter_names_mapping.json", "r") as f_out:
         shorter_names = json.loads(f_out.read())
 
     # persons.json - cache for search box
