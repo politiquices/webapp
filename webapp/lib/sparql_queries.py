@@ -130,35 +130,6 @@ def get_total_articles_by_year_by_relationship_type():
     return values
 
 
-# Cached in JSON files and load into memory on startup
-def get_graph_edges():
-    # NOTE: 'other' relationship types are ignored
-    query = """
-        SELECT DISTINCT ?person_a ?rel_type ?person_b ?date ?url {
-        VALUES ?rel_values {'ent1_opposes_ent2' 'ent2_opposes_ent1' 
-                            'ent1_supports_ent2' 'ent2_supports_ent1'} .
-        ?rel politiquices:type ?rel_values .  
-        ?rel politiquices:ent1 ?person_a .
-        ?rel politiquices:ent2 ?person_b .        
-        ?rel politiquices:type ?rel_type .
-        ?rel politiquices:url ?url .
-        ?url dc:date ?date .
-        }
-        """
-    results = query_sparql(PREFIXES + "\n" + query, "politiquices")
-    edges = [
-        {
-            "person_a": x["person_a"]["value"],
-            "person_b": x["person_b"]["value"],
-            "rel_type": x["rel_type"]["value"],
-            "url": x["url"]["value"],
-            "date": x["date"]["value"],
-        }
-        for x in results["results"]["bindings"]
-    ]
-    return edges
-
-
 def get_persons_co_occurrences_counts():
     query = """
         SELECT DISTINCT ?person_a ?person_b (COUNT (?url) as ?n_artigos) {
