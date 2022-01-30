@@ -54,7 +54,7 @@ async def create_item(item: Item, request: Request):
     print(item.rel_type.strip())
 
     with open('annotations_from_webapp.tsv', mode='a+') as f_out:
-        writer = csv.writer(f_out, delimiter='\t')
+        writer = csv.writer(f_out, delimiter='\t', quotechar="'")
         row = [item.title.strip(),
                item.rel_type.strip(),
                item.date.strip(),

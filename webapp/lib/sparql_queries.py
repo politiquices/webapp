@@ -192,20 +192,22 @@ def get_persons_articles_freq():
 
 
 def get_persons_wiki_id_name_image_url():
+    # wd:Q5 -> all human beings
+    # wd:Q15904441 -> for Dailai Lama, he's not a human being, it's a position/spiritual leader
     query = f"""
         SELECT DISTINCT ?item ?label ?image_url {{
-            ?item wdt:P31 wd:Q5.
-            SERVICE <{wikidata_endpoint}> {{
-                ?item rdfs:label ?label . FILTER(LANG(?label) = "pt")
-                OPTIONAL {{ ?item wdt:P18 ?image_url. }}                
-                }}
-            }}
+            VALUES ?valid_instances {{wd:Q5 wd:Q15904441}}
+            ?item wdt:P31 ?valid_instances.
+            ?item rdfs:label ?label . FILTER(LANG(?label) = "pt")  
+            OPTIONAL {{ ?item wdt:P18 ?image_url. }}           
+        }}
         ORDER BY ?label
         """
+
     persons = set()
     items_as_dict = dict()
 
-    result = query_sparql(PREFIXES + "\n" + query, "politiquices")
+    result = query_sparql(PREFIXES + "\n" + query, "wikidata")
     for e in result["results"]["bindings"]:
 
         # this is just avoid duplicate entities, same entity with two labels
