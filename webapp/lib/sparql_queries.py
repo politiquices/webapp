@@ -1084,10 +1084,10 @@ def get_entities_without_image():
 
 
 # relationships to re-annotate, e.g 'other'
-def get_relationships_to_annotate():
-    query = """
+def get_relationships_to_annotate(limit=1000):
+    query = f"""
         SELECT ?date ?url ?title ?rel_type ?score ?ent1 ?ent1_str ?ent2 ?ent2_str
-        WHERE {
+        WHERE {{
           ?x politiquices:type ?rel_type;
              politiquices:score ?score;
              politiquices:ent1 ?ent1;
@@ -1100,9 +1100,9 @@ def get_relationships_to_annotate():
                dc:title ?title .
 
           FILTER(REGEX(?rel_type,"other")).
-        }
+        }}
         ORDER BY ?date ?score
-        LIMIT 15000
+        LIMIT {limit}
     """
     result = query_sparql(PREFIXES + "\n" + query, "politiquices")
     to_annotate = []

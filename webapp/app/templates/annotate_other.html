@@ -60,19 +60,21 @@
             title_data.ent_2 = entities.ent2;
             title_data.ent2_wiki = entities.ent2_wiki_url;
           }
+      
+      var settings = {
+        "url": "http://0.0.0.0:8000/annotation/",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+          "Content-Type": "application/json"
+          },
+        "data": JSON.stringify(title_data),
+      };
 
-       var myJsonString = JSON.stringify(title_data);
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
 
-       $.ajax({
-         type: "POST",
-         context: this,
-         crossDomain: true,
-         url: 'http://politiquices.pt:8000/annotation/',
-         data: myJsonString,
-         success: function (data) {
-           $(this).addClass("disabled");
-         },
-       });
       });
     });
 

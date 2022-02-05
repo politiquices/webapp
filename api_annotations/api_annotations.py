@@ -12,6 +12,7 @@ origins = [
     "https://www.politiquices.pt",
     "http://localhost",
     "http://localhost:8080",
+    "http://0.0.0.0:5000",
 ]
 
 """
@@ -41,11 +42,12 @@ class Item(BaseModel):
     rel_type: str
 
 
-base_url = 'https://www.wikidata.org/wiki/'
+base_url = 'http://www.wikidata.org/wiki/'
 
 
 @app.post("/annotation/")
 async def create_item(item: Item, request: Request):
+
     print(item.ent_1.strip(), item.ent1_wiki.strip())
     print(item.ent_2.strip(), item.ent2_wiki.strip())
     print(item.date.strip())

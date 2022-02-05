@@ -1,0 +1,34 @@
+- Ver todas as interacções entre duas entidades
+- Filtro para selecionar apenas partidos portugueses
+
+
+- Top de Relações:
+    Mostrar apenas relações existentes:
+        https://www.politiquices.pt/entity?q=Q5511406
+        https://www.politiquices.pt/entity?q=Q9619510
+        http://0.0.0.0:5000/entity?q=Q182367
+        http://0.0.0.0:5000/entity?q=Q91901804
+        http://0.0.0.0:5000/entity?q=Q23797153
+
+- Menu (hamburger)
+    - clicar no branco fazer collapse
+    - não funciona no telemovel
+
+- Grafo:
+   - garantir que quando se sai do grafo por pesquisar por personalidade nao ficam popup boxes
+   - rede de uma entidade, duas direcções
+
+- erros de paramêtros nao válidos no URL:
+    - queries/ tem que ter duas entidades validas
+    - fazer redirect para o index.html com mensagem de erro
+
+
+Refactoring
+-----------
+    - Limpar o Javascript: re-utilizar
+    - CSS todo fora do HTML
+    - JS libs todas locais
+    - bootstrap-table javascript local
+    - Datatables: final do base.html -> por tudo local
+
+- fix /etc/systemd/system/myproject.service probably needs uwsgi as apt-get instead pip install
