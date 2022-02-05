@@ -162,7 +162,7 @@ def fill_zero_values(labels, input_freq):
     return zero_filled_values
 
 
-def get_chart_labels_min_max(min_date="1994", max_date="2020"):
+def get_chart_labels_min_max(min_date="1994", max_date="2022"):
     # ToDo: compute min_date and max_date on the fly
     all_years = []
     current_date = int(min_date)

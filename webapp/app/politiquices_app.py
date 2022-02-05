@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import request, jsonify, render_template
 
-from lib.utils import read_ground_truth
-from lib.config import entities_batch_size
-from lib.utils import get_info
-from lib.graph import get_entity_network, get_network
-from lib.cache import all_entities_info, all_parties_info, chave_publico
-from lib.render_queries import (
+from webapp.lib.utils import read_ground_truth
+from webapp.lib.config import entities_batch_size
+from webapp.lib.utils import get_info
+from webapp.lib.graph import get_entity_network, get_network
+from webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
+from webapp.lib.render_queries import (
     party_vs_party,
     person_vs_party,
     party_vs_person,
@@ -17,7 +17,7 @@ from lib.render_queries import (
     get_stats
 )
 
-from lib.sparql_queries import (
+from webapp.lib.sparql_queries import (
     get_entities_without_image,
     get_relationships_to_annotate,
     personalities_only_with_other,
@@ -295,7 +295,7 @@ def chave():
 # admin only: get all 'other' relationships and shows then in annotation template
 @app.route("/annotate")
 def annotations():
-    training_data = read_ground_truth("../../../classifiers/politiquices_data_v1.0.csv")
+    training_data = read_ground_truth("../../data-releases/politiquices_data_v1.0.csv")
     all_other = get_relationships_to_annotate()
     to_annotate = []
     skipped = 0

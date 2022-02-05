@@ -4,19 +4,19 @@ from functools import lru_cache
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-from lib.data_models import (
+from webapp.lib.data_models import (
     OfficePosition,
     Person,
     PoliticalParty
 )
-from lib.config import (
+from webapp.lib.config import (
     live_wikidata,
     no_image,
     politiquices_endpoint,
     ps_logo,
     wikidata_endpoint
 )
-from lib.utils import make_https, invert_relationship
+from webapp.lib.utils import make_https, invert_relationship
 
 POLITIQUICES_PREFIXES = """
     PREFIX politiquices: <http://www.politiquices.pt/>
