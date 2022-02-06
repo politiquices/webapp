@@ -1,15 +1,15 @@
 from collections import Counter, defaultdict
 from functools import lru_cache
 
-from webapp.lib.cache import (
+from website.webapp.lib.cache import (
     all_entities_info,
     all_parties_info,
     all_parties_members,
     top_co_occurrences,
     wiki_id_info,
 )
-from webapp.lib.data_models import Person
-from webapp.lib.sparql_queries import (
+from website.webapp.lib.data_models import Person
+from website.webapp.lib.sparql_queries import (
     get_person_relationships_by_year,
     get_wiki_id_affiliated_with_party,
     get_relationship_between_parties,
@@ -26,7 +26,7 @@ from webapp.lib.sparql_queries import (
     get_persons_articles_freq
 )
 
-from webapp.lib.utils import (
+from website.webapp.lib.utils import (
     clickable_title,
     determine_heatmap_height,
     fill_zero_values,

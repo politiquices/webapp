@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import request, jsonify, render_template
 
-from webapp.lib.utils import read_ground_truth
-from webapp.lib.config import entities_batch_size
-from webapp.lib.utils import get_info
-from webapp.lib.graph import get_entity_network, get_network
-from webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
-from webapp.lib.render_queries import (
+from website.webapp.lib.utils import read_ground_truth
+from website.webapp.lib.config import entities_batch_size
+from website.webapp.lib.utils import get_info
+from website.webapp.lib.graph import get_entity_network, get_network
+from website.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
+from website.webapp.lib.render_queries import (
     party_vs_party,
     person_vs_party,
     party_vs_person,
@@ -17,7 +17,7 @@ from webapp.lib.render_queries import (
     get_stats
 )
 
-from webapp.lib.sparql_queries import (
+from website.webapp.lib.sparql_queries import (
     get_entities_without_image,
     get_relationships_to_annotate,
     personalities_only_with_other,

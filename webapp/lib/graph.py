@@ -1,9 +1,9 @@
 from collections import defaultdict
 
-from webapp.lib.cache import wiki_id_info
-from webapp.lib.neo4j_connect import Neo4jConnection
-from webapp.lib.utils import get_short_name
-from webapp.lib.config import neo4j_endpoint
+from website.webapp.lib.cache import wiki_id_info
+from website.webapp.lib.neo4j_connect import Neo4jConnection
+from website.webapp.lib.utils import get_short_name
+from website.webapp.lib.config import neo4j_endpoint
 
 
 def query_neo4j(query):
@@ -196,3 +196,12 @@ def get_network(relation, year_from, year_to, freq_max, freq_min):
     """
 
     return nodes, edges
+
+
+def get_entity_network_sparql():
+    # ToDo
+    pass
+
+def get_network_sparql():
+    # ToDo
+    pass

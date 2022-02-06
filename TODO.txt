@@ -8,6 +8,11 @@
     - timeline de todas as interacções entre duas ou mais entidades
     - ver: https://openbase.com/js/react-native-timeline-flatlist
 
+    https://github.com/stephane-monnot/react-vertical-timeline
+    https://github.com/prabhuignoto/react-chrono
+    https://github.com/highfield/react-chrono
+    https://github.com/veysiyildiz/vertical-timeline-component-for-react
+
 
 - Top de Relações:
     Mostrar apenas relações existentes:
@@ -32,10 +37,10 @@
 
 Refactoring
 -----------
-    - Limpar o Javascript: re-utilizar
-    - CSS todo fora do HTML
-    - JS libs todas locais
-    - bootstrap-table javascript local
-    - Datatables: final do base.html -> por tudo local
+- Limpar o Javascript: re-utilizar
+- CSS todo fora do HTML
+- JS libs todas locais
+- bootstrap-table javascript local
+- Datatables: final do base.html -> por tudo local
 
 - fix /etc/systemd/system/myproject.service probably needs uwsgi as apt-get instead pip install
