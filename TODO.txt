@@ -1,5 +1,12 @@
-- Ver todas as interacções entre duas entidades
+- Ver todas as oposições/suportes entre duas entidades timeline
 - Filtro para selecionar apenas partidos portugueses
+- Explorar apenas 1 ano em específico
+- Ver uma personalidade em timeline em vez de tabela
+
+
+- outro projecto:
+    - timeline de todas as interacções entre duas ou mais entidades
+    - ver: https://openbase.com/js/react-native-timeline-flatlist
 
 
 - Top de Relações:
