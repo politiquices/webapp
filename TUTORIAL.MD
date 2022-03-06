@@ -43,10 +43,9 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
     python app/politiquices_app.py
 
     # ToDo: nginx
-    screen -SU 
-
-clear;PYTHONPATH=/home/dsbatista/politiquices uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
-
+    screen -SU
+    # /home/dsbatista/politiquices/politiquices/webapp/webapp/app
+    # clear;PYTHONPATH=/home/dsbatista/politiquices uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
 
     # uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
 

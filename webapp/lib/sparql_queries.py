@@ -36,12 +36,7 @@ WIKIDATA_PREFIXES = """
     PREFIX        pq: <http://www.wikidata.org/prop/qualifier/>
     """
 
-OTHERS = """
-    PREFIX        bd: <http://www.bigdata.com/rdf#>
-    PREFIX  wikibase: <http://wikiba.se/ontology#>
-    """
-
-PREFIXES = POLITIQUICES_PREFIXES + WIKIDATA_PREFIXES + OTHERS
+PREFIXES = POLITIQUICES_PREFIXES + WIKIDATA_PREFIXES
 
 
 # Statistics

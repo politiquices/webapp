@@ -1,4 +1,6 @@
-- Ver todas as oposições/suportes entre duas entidades timeline
+- add black, flake8, mypy
+
+- Ver todas as oposições/suportes, i.e. todas as relações (excepto other) entre duas entidades timeline
 - Filtro para selecionar apenas partidos portugueses
 - Explorar apenas 1 ano em específico
 - Ver uma personalidade em timeline em vez de tabela
