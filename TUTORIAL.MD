@@ -35,20 +35,22 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
   
 - Docker running: `webapp`
 
-
     # without Docker
+    check `lib/config.py`
     cd politiquices/webapp/webapp
     python generate_caches.py
+    cp static/json/CHAVE-Publico_94_95.jsonl
+    
+    # flask dev-server
     cd webapp 
     python app/politiquices_app.py
 
-    # ToDo: nginx
+    # nginx
     screen -SU
-    # /home/dsbatista/politiquices/politiquices/webapp/webapp/app
-    # clear;PYTHONPATH=/home/dsbatista/politiquices uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
+    cd /home/dsbatista/webapp/webapp
+    PYTHONPATH=/home/dsbatista/politiquices uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
 
-    # uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
-
+    # fix /etc/systemd/system/myproject.service probably needs uwsgi as apt-get instead pip install
 
 
 

@@ -44,5 +44,3 @@ Refactoring
 - JS libs todas locais
 - bootstrap-table javascript local
 - Datatables: final do base.html -> por tudo local
-
-- fix /etc/systemd/system/myproject.service probably needs uwsgi as apt-get instead pip install
