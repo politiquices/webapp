@@ -1,9 +1,9 @@
 from collections import defaultdict
 
-from website.webapp.lib.cache import wiki_id_info
-from website.webapp.lib.neo4j_connect import Neo4jConnection
-from website.webapp.lib.utils import get_short_name
-from website.webapp.lib.config import neo4j_endpoint
+from webapp.webapp.lib.cache import wiki_id_info
+from webapp.webapp.lib.neo4j_connect import Neo4jConnection
+from webapp.webapp.lib.utils import get_short_name
+from webapp.webapp.lib.config import neo4j_endpoint
 
 
 def query_neo4j(query):
