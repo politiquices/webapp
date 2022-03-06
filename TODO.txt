@@ -3,6 +3,7 @@
     2) instancia do rubrix no politiquices.pt com auth .htpasswd
     3) python script do crontab a fazer backups semanais dos dados anotados
 
+- https://codingthesmartway.com/modern-react-from-the-beginning-ep2-starting-with-react-components-jsx/
 - add black, flake8, mypy
 - Ver todas as oposições/suportes, i.e. todas as relações (excepto other) entre duas entidades timeline
 - Filtro para selecionar apenas partidos portugueses
