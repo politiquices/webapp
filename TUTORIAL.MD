@@ -48,9 +48,26 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
     # nginx
     screen -SU
     cd /home/dsbatista/webapp/webapp
-    PYTHONPATH=/home/dsbatista/politiquices uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
 
-    # fix /etc/systemd/system/myproject.service probably needs uwsgi as apt-get instead pip install
+    sudo systemctl restart nginx
+
+    # https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-20-04
+    
+    # Runs on port 5000 as an example
+    # PYTHONPATH=/home/dsbatista uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app
+    
+    # Runs on a local socket in production, with uWSGI application waiting for requests on the socket file
+    PYTHONPATH=/home/dsbatista uwsgi -s myapp.sock -w wsgi:app --chmod-socket=666 --master --processes 6 --threads 1
+
+    # nginx redirects http:80/443 to this local socket, config:
+    /etc/nginx/sites-available/politiquices
+
+    ufw firewal
+    
+
+    
+    
+    
 
 
 
