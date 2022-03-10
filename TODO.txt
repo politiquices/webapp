@@ -1,9 +1,9 @@
 - Annotated DAta
     1) instancia do elastic search a correr localmente no politiquices.pt
     2) instancia do rubrix no politiquices.pt com auth .htpasswd
-    3) python script do crontab a fazer backups semanais dos dados anotados
+	3) script para carregar dados
+    4) script do crontab a fazer backups semanais dos dados anotados
 
-- add black, flake8, mypy
 - Ver todas as oposições/suportes, i.e. todas as relações (excepto other) entre duas entidades timeline
 - Filtro para selecionar apenas partidos portugueses
 - Explorar apenas 1 ano em específico
