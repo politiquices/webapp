@@ -139,7 +139,7 @@
             <table style="overflow-y: scroll; display:block; height:500px;" class="table table-responsive-md table-hover">
               <tbody>
               {% for item in items.top_relations.who_person_opposes %}
-                <tr class='clickable-row' data-href=/queries?&e1={{items.wiki_id}}&e2={{item.wiki_id}}&relationship=opposes&year_from=1994&year_to=2019>
+                <tr class='clickable-row' data-href=/queries?&e1={{items.wiki_id}}&e2={{item.wiki_id}}&relationship=opposes&year_from=1994&year_to=2022>
                     <td id="top-row">{{item.name}}</td>
                     <td id="top-row">{{item.nr_articles}}</td>
                 </tr>
@@ -153,7 +153,7 @@
           <table style="overflow-y: scroll; display:block; height:500px;" class="table table-responsive-md table-hover">
               <tbody>
               {% for item in items.top_relations.who_person_supports %}
-                <tr class='clickable-row' data-href=/queries?&e1={{items.wiki_id}}&e2={{item.wiki_id}}&relationship=supports&year_from=1994&year_to=2019>
+                <tr class='clickable-row' data-href=/queries?&e1={{items.wiki_id}}&e2={{item.wiki_id}}&relationship=supports&year_from=1994&year_to=2022>
                     <td id="top-row">{{item.name}}</td>
                     <td id="top-row">{{item.nr_articles}}</td>
                 </tr>
@@ -167,7 +167,7 @@
           <table style="overflow-y: scroll; display:block; height:500px;" class="table table-responsive-md table-hover">
               <tbody>
               {% for item in items.top_relations.who_opposes_person %}
-                <tr class='clickable-row' data-href=/queries?&e2={{items.wiki_id}}&e1={{item.wiki_id}}&relationship=opposes&year_from=1994&year_to=2019>
+                <tr class='clickable-row' data-href=/queries?&e2={{items.wiki_id}}&e1={{item.wiki_id}}&relationship=opposes&year_from=1994&year_to=2022>
                     <td id="top-row">{{item.name}}</td>
                     <td id="top-row">{{item.nr_articles}}</td>
                 </tr>
@@ -182,7 +182,7 @@
                  class="table table-responsive-md table-hover">
               <tbody>
               {% for item in items.top_relations.who_supports_person %}
-                <tr class='clickable-row' data-href=/queries?&e2={{items.wiki_id}}&e1={{item.wiki_id}}&relationship=supports&year_from=1994&year_to=2019>
+                <tr class='clickable-row' data-href=/queries?&e2={{items.wiki_id}}&e1={{item.wiki_id}}&relationship=supports&year_from=1994&year_to=2022>
                     <td id="top-row">{{item.name}}</td>
                     <td id="top-row">{{item.nr_articles}}</td>
                 </tr>
