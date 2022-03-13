@@ -11,23 +11,7 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
 
 - Docker running: `fuseki-docker`
 
-### 2 Neo4J endpoint:
-
-    cd politiquices/neo4j
-    make graph
-    make neo4j
-
-    # might need to udpate the config.py file
-    sparql_endoint = "http://172.17.0.2:3030"
-
-    # get ip address of the SPARQL container within the Docker network
-    docker ps
-    docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' CONTAINER_ID
-
-- Docker running: `neo4j`
-
-
-### 3 Launch Web server
+### 2 Launch Web server
 
     # might need to udpate the webapp/lib/config.py file
     cd politiquices/webapp

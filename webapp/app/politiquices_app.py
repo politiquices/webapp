@@ -5,7 +5,7 @@ from flask_cors import CORS
 from webapp.webapp.lib.utils import read_ground_truth
 from webapp.webapp.lib.config import entities_batch_size
 from webapp.webapp.lib.utils import get_info
-from webapp.webapp.lib.graph import get_entity_network, get_network, get_network_sparql
+from webapp.webapp.lib.graph import get_entity_network_sparql, get_network_sparql
 from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
 from webapp.webapp.lib.render_queries import (
     party_vs_party,
@@ -112,8 +112,6 @@ def graph():
     freq_min = 10
     freq_max = 30
 
-    print("args: ", request.args)
-
     # if not arguments were given, render graph with default arguments
     if not list(request.args.items()):
         nodes, edges = get_network_sparql(relation, year_from, year_to, freq_max, freq_min)
@@ -134,10 +132,10 @@ def graph():
 
     # get the network of a specific person
     if wiki_id := request.args.get('entity'):
-        nodes, edges = get_entity_network(wiki_id, relation, freq_min, freq_max, year_from, year_to)
+        nodes, edges = get_entity_network_sparql(wiki_id, relation, freq_min, freq_max, year_from, year_to)
         return jsonify({"nodes": nodes, "edges": edges})
 
-    nodes, edges = get_network(relation, year_from, year_to, freq_max, freq_min)
+    nodes, edges = get_network_sparql(relation, year_from, year_to, freq_max, freq_min)
     return jsonify({"nodes": nodes, "edges": edges})
 
 
