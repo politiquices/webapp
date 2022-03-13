@@ -1,10 +1,11 @@
 from flask import Flask
 from flask import request, jsonify, render_template
+from flask_cors import CORS
 
 from webapp.webapp.lib.utils import read_ground_truth
 from webapp.webapp.lib.config import entities_batch_size
 from webapp.webapp.lib.utils import get_info
-from webapp.webapp.lib.graph import get_entity_network, get_network
+from webapp.webapp.lib.graph import get_entity_network, get_network, get_network_sparql
 from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
 from webapp.webapp.lib.render_queries import (
     party_vs_party,
@@ -25,6 +26,7 @@ from webapp.webapp.lib.sparql_queries import (
 
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route("/")
@@ -114,7 +116,7 @@ def graph():
 
     # if not arguments were given, render graph with default arguments
     if not list(request.args.items()):
-        nodes, edges = get_network(relation, year_from, year_to, freq_max, freq_min)
+        nodes, edges = get_network_sparql(relation, year_from, year_to, freq_max, freq_min)
         return render_template("graph.html", nodes=nodes, edges=edges)
 
     freq_min = int(request.args.get("freq_min"))
@@ -345,7 +347,27 @@ def only_other():
     results = personalities_only_with_other()
     return render_template("incomplete_entities_no_rels.html", items=results)
 
+@app.route("/entity_raw")
+def entity_raw():
+    # get args
+    print(request.args)
+    from_search = True if 'search' in request.args else False
+    annotate = True if 'annotate' in request.args else False
+    wiki_id = request.args.get("q")
+
+    # get data
+    data = entity_full_story(wiki_id, annotate)
+
+    # render an annotation template
+    if annotate:
+        return render_template("entity_annotate.html", items=data)
+
+    # decide which template to use
+    template = "entity_content.html" if from_search else "entity.html"
+
+    return jsonify(data)
+
 
 if __name__ == "__main__":
-    app.run()
-    # app.run(host="localhost", port=5000, debug=True)
+    # app.run()
+    app.run(host="localhost", port=5000, debug=True)
