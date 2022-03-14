@@ -1,6 +1,5 @@
 from flask import Flask
 from flask import request, jsonify, render_template
-from flask_cors import CORS
 
 from webapp.webapp.lib.utils import read_ground_truth
 from webapp.webapp.lib.config import entities_batch_size
@@ -26,7 +25,6 @@ from webapp.webapp.lib.sparql_queries import (
 
 
 app = Flask(__name__)
-CORS(app)
 
 
 @app.route("/")
