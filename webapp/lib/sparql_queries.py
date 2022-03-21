@@ -4,17 +4,13 @@ from functools import lru_cache
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-from webapp.webapp.lib.data_models import (
-    OfficePosition,
-    Person,
-    PoliticalParty
-)
+from webapp.webapp.lib.data_models import OfficePosition, Person, PoliticalParty
 from webapp.webapp.lib.config import (
     live_wikidata,
     no_image,
     politiquices_endpoint,
     ps_logo,
-    wikidata_endpoint
+    wikidata_endpoint,
 )
 from webapp.webapp.lib.utils import make_https, invert_relationship
 
@@ -214,7 +210,7 @@ def get_persons_wiki_id_name_image_url():
             "wikidata_url": make_https(e["item"]["value"]),
             "wiki_id": e["item"]["value"].split("/")[-1],
             "name": e["label"]["value"],
-            "image_url": make_https(e["image_url"]["value"]) if "image_url" in e else no_image
+            "image_url": make_https(e["image_url"]["value"]) if "image_url" in e else no_image,
         }
 
         # add to already processed persons
@@ -258,7 +254,7 @@ def get_all_parties_and_members_with_relationships():
         party_logo = x["party_logo"]["value"] if "party_logo" in x else no_image
         if x["political_party"]["value"].split("/")[-1] == "Q847263":
             party_logo = ps_logo
-        country = x["party_country"]["value"].split("/")[-1] if x.get('party_country') else None
+        country = x["party_country"]["value"].split("/")[-1] if x.get("party_country") else None
         political_parties.append(
             {
                 "wiki_id": x["political_party"]["value"].split("/")[-1],
@@ -500,7 +496,8 @@ def get_person_detailed_info(wiki_id):
         """
 
     results = query_sparql(PREFIXES + "\n" + occupation_query, "wikidata")
-    occupations = [x["occupation_label"]["value"] for x in results["results"]["bindings"]]
+    occupations = [x["occupation_label"]["value"] for x in results["results"]["bindings"] 
+                   if x["occupation_label"]["value"]!='político']
 
     results = query_sparql(PREFIXES + "\n" + education_query, "wikidata")
     education = [x["educatedAt_label"]["value"] for x in results["results"]["bindings"]]
@@ -654,10 +651,10 @@ def get_top_relationships(wiki_id):
     person_as_subject = defaultdict(lambda: defaultdict(int))
     for x in results["results"]["bindings"]:
         other_person = x["ent2"]["value"].split("/")[-1]
-        if 'opposes' in x["rel_type"]["value"]:
-            person_as_subject['who_person_opposes'][other_person] += 1
-        if 'supports' in x["rel_type"]["value"]:
-            person_as_subject['who_person_supports'][other_person] += 1
+        if "opposes" in x["rel_type"]["value"]:
+            person_as_subject["who_person_opposes"][other_person] += 1
+        if "supports" in x["rel_type"]["value"]:
+            person_as_subject["who_person_supports"][other_person] += 1
 
     # get all the relationships where the person acts as target, i.e.: is opposed/supported by
     query = f"""
@@ -682,10 +679,10 @@ def get_top_relationships(wiki_id):
     person_as_target = defaultdict(lambda: defaultdict(int))
     for x in results["results"]["bindings"]:
         other_person = x["ent2"]["value"].split("/")[-1]
-        if 'opposes' in x["rel_type"]["value"]:
-            person_as_target['who_opposes_person'][other_person] += 1
-        if 'supports' in x["rel_type"]["value"]:
-            person_as_target['who_supports_person'][other_person] += 1
+        if "opposes" in x["rel_type"]["value"]:
+            person_as_target["who_opposes_person"][other_person] += 1
+        if "supports" in x["rel_type"]["value"]:
+            person_as_target["who_supports_person"][other_person] += 1
 
     return person_as_subject, person_as_target
 
@@ -1154,20 +1151,23 @@ def personalities_only_with_other():
         all_except_other.add(x["person"]["value"])
 
     # get the difference between other only and all except other
-    only_other = ['wd:'+entity.split("/")[-1]
-                  for entity in all_with_other.difference(all_except_other)]
+    only_other = [
+        "wd:" + entity.split("/")[-1] for entity in all_with_other.difference(all_except_other)
+    ]
 
     # get all in wikidata
     query = """SELECT DISTINCT ?entity { ?entity wdt:P31 wd:Q5 }"""
     result = query_sparql(PREFIXES + "\n" + query, "wikidata")
-    all_wikidata = ['wd:'+x["entity"]["value"].split("/")[-1]
-                    for x in result["results"]["bindings"]]
+    all_wikidata = [
+        "wd:" + x["entity"]["value"].split("/")[-1] for x in result["results"]["bindings"]
+    ]
 
     # get all in politiquices
     query = """SELECT DISTINCT ?entity { ?entity wdt:P31 wd:Q5 }"""
     result = query_sparql(PREFIXES + "\n" + query, "politiquices")
-    all_politiquices = ['wd:'+x["entity"]["value"].split("/")[-1]
-                        for x in result["results"]["bindings"]]
+    all_politiquices = [
+        "wd:" + x["entity"]["value"].split("/")[-1] for x in result["results"]["bindings"]
+    ]
 
     # get all in wikidata and not in politiquices
     wikidata_only = set(all_wikidata).difference(set(all_politiquices))
@@ -1186,9 +1186,11 @@ def personalities_only_with_other():
     results = []
     for x in result["results"]["bindings"]:
         results.append(
-            {'name': x['name']['value'],
-             'image_url': no_image if 'image_url' not in x else x['image_url']['value'],
-             'wiki_id': x['wiki_id']['value']}
+            {
+                "name": x["name"]["value"],
+                "image_url": no_image if "image_url" not in x else x["image_url"]["value"],
+                "wiki_id": x["wiki_id"]["value"],
+            }
         )
 
     return results
@@ -1205,4 +1207,3 @@ def query_sparql(query, endpoint):
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     return results
-

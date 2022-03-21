@@ -56,8 +56,10 @@ def personalities_json_cache():
         shorter_names = json.loads(f_out.read())
 
     # persons.json - cache for search box
-    persons = [{"name": x["name"], "wiki_id": x["wiki_id"]}
-               for x in sorted(per_data, key=lambda x: x["name"])]
+    persons = [
+        {"name": x["name"], "wiki_id": x["wiki_id"]}
+        for x in sorted(per_data, key=lambda x: x["name"])
+    ]
     with open(static_data + "persons.json", "wt") as f_out:
         json.dump(persons, f_out, indent=True)
 
@@ -84,8 +86,7 @@ def parties_json_cache(all_politiquices_persons):
     # rename parties names to include short-forms, nice to have in autocomplete
     parties_mapping = {
         "Bloco de Esquerda": "BE - Bloco de Esquerda",
-        "Coliga\u00e7\u00e3o Democr\u00e1tica Unit\u00e1ria":
-            "CDU - Coliga\u00e7\u00e3o Democr\u00e1tica Unit\u00e1ria (PCP-PEV)",
+        "Coliga\u00e7\u00e3o Democr\u00e1tica Unit\u00e1ria": "CDU - Coliga\u00e7\u00e3o Democr\u00e1tica Unit\u00e1ria (PCP-PEV)",
         "Juntos pelo Povo": "JPP - Juntos pelo Povo",
         "Partido Comunista Portugu\u00eas": "PCP - Partido Comunista Portugu\u00eas",
         "Partido Social Democrata": "PSD - Partido Social Democrata",
@@ -93,8 +94,7 @@ def parties_json_cache(all_politiquices_persons):
         "Partido Socialista Revolucion\u00e1rio": "PSR - Partido Socialista Revolucion\u00e1rio",
         "Partido Democr\u00e1tico Republicano": "PDR - Partido Democr\u00e1tico Republicano",
         "Pessoas\u2013Animais\u2013Natureza": "PAN - Pessoas\u2013Animais\u2013Natureza",
-        "Partido Comunista dos Trabalhadores Portugueses":
-            "PCTP/MRPP - Partido Comunista dos Trabalhadores Portugueses",
+        "Partido Comunista dos Trabalhadores Portugueses": "PCTP/MRPP - Partido Comunista dos Trabalhadores Portugueses",
         "RIR": "RIR - Reagir Incluir Reciclar",
         "Partido da Terra": "MPT - Partido da Terra",
     }

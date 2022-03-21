@@ -3,7 +3,7 @@ import re
 
 
 def make_https(url):
-    return re.sub(r'http://', "https://", url)
+    return re.sub(r"http://", "https://", url)
 
 
 def add_icon(r):
@@ -15,8 +15,8 @@ def add_icon(r):
         r["image_height"] = "20"
 
     elif r["url"].startswith("https://www.linguateca.pt/CHAVE"):
-        r["url"] = r['url'].replace('?', '')
-        r["url"] = r['url'].replace('https://www.linguateca.pt/CHAVE', 'chave?q=')
+        r["url"] = r["url"].replace("?", "")
+        r["url"] = r["url"].replace("https://www.linguateca.pt/CHAVE", "chave?q=")
         r["link_image"] = "/static/images/linguateca_logo.png"
         r["image_width"] = "68"
         r["image_height"] = "20"
@@ -43,7 +43,9 @@ def per_vs_person_linkable(r):
 
     r["title_clickable"] = title_link
     add_icon(r)
-    r["link"] = f"""<a href="{r["url"]}" target="_blank" rel="noopener noreferrer">\
+    r[
+        "link"
+    ] = f"""<a href="{r["url"]}" target="_blank" rel="noopener noreferrer">\
                     <img src="{r['link_image']}" width="{r['image_width']}" \
                     height="{r['image_height']}"></a>"""
 
@@ -62,18 +64,18 @@ def clickable_title(r, wiki_id):
     r["title_clickable"] = title_link
     add_icon(r)
 
-    r['ent1_wiki'] = 'https://www.wikidata.org/entity/'+wiki_id
-    r['ent2_wiki'] = 'https://www.wikidata.org/entity/'+r['other_ent_url'].split('q=')[1]
-    r['ent1_str'] = r['focus_ent']
-    r['ent2_str'] = r['other_ent_name']
+    r["ent1_wiki"] = "https://www.wikidata.org/entity/" + wiki_id
+    r["ent2_wiki"] = "https://www.wikidata.org/entity/" + r["other_ent_url"].split("q=")[1]
+    r["ent1_str"] = r["focus_ent"]
+    r["ent2_str"] = r["other_ent_name"]
 
     return r
 
 
 def get_short_name(e_wiki_id, wiki_id_info):
-    if name := wiki_id_info[e_wiki_id].get('shorter_name', None):
+    if name := wiki_id_info[e_wiki_id].get("shorter_name", None):
         return name
-    return wiki_id_info[e_wiki_id]['name']
+    return wiki_id_info[e_wiki_id]["name"]
 
 
 def make_json(relationships):
@@ -94,15 +96,18 @@ def make_json(relationships):
         html_title = f"""{r['title_clickable']}"""
         link = f"""<a href="{r["url"]}" target="_blank" rel="noopener noreferrer">\
                    <img src="{r['link_image']}" width="{r['image_width']}" height="20"></a>"""
-        json_data.append({"data": r["date"],
-                          "titulo": html_title,
-                          "link": link,
-                          "url": r["url"],
-                          'ent1': r['ent1_str'],
-                          'ent2': r['ent2_str'],
-                          'ent1_wiki': make_https(r['ent1_wiki']),
-                          'ent2_wiki': make_https(r['ent2_wiki'])
-                          })
+        json_data.append(
+            {
+                "data": r["date"],
+                "titulo": html_title,
+                "link": link,
+                "url": r["url"],
+                "ent1": r["ent1_str"],
+                "ent2": r["ent2_str"],
+                "ent1_wiki": make_https(r["ent1_wiki"]),
+                "ent2_wiki": make_https(r["ent2_wiki"]),
+            }
+        )
 
     return json_data
 
@@ -111,23 +116,27 @@ def make_single_json(relationship):
     """
     transform titles/relationships into a json, for bootstrap-table
     """
-    link = f"<a href=\"{relationship['url']}\" target=\"_blank\" rel=\"noopener noreferrer\"> " \
-           f"<img src=\"{relationship['link_image']}\" width=\"{relationship['image_width']}\" " \
-           f"height=\"20\"></a>"
+    link = (
+        f"<a href=\"{relationship['url']}\" target=\"_blank\" rel=\"noopener noreferrer\"> "
+        f"<img src=\"{relationship['link_image']}\" width=\"{relationship['image_width']}\" "
+        f'height="20"></a>'
+    )
 
-    return {"data": relationship["date"],
-            "titulo": f"{relationship['title_clickable']}",
-            "link": link,
-            "url": relationship["url"],
-            'ent1': relationship['ent1_str'],
-            'ent2': relationship['ent2_str'],
-            'ent1_wiki': make_https(relationship['ent1_wiki']),
-            'ent2_wiki': make_https(relationship['ent2_wiki'])}
+    return {
+        "data": relationship["date"],
+        "titulo": f"{relationship['title_clickable']}",
+        "link": link,
+        "url": relationship["url"],
+        "ent1": relationship["ent1_str"],
+        "ent2": relationship["ent2_str"],
+        "ent1_wiki": make_https(relationship["ent1_wiki"]),
+        "ent2_wiki": make_https(relationship["ent2_wiki"]),
+    }
 
 
 def get_relationship(relationship):
-    opposes_gradient = '#E60001'
-    supports_gradient = '#44861E'
+    opposes_gradient = "#E60001"
+    supports_gradient = "#44861E"
 
     if relationship == "opposes":
         return opposes_gradient, "ent1_opposes_ent2", "opõe-se a"
@@ -139,7 +148,7 @@ def get_relationship(relationship):
 
 
 def invert_relationship(rel_type):
-    rel_only = re.match(r'ent[1-2]_(.*)_ent[1-2]', rel_type).groups()[0]
+    rel_only = re.match(r"ent[1-2]_(.*)_ent[1-2]", rel_type).groups()[0]
     if rel_type.endswith("ent2"):
         rel_type_inverted = "ent2_" + rel_only + "_ent1"
     elif rel_type.endswith("ent1"):
@@ -182,17 +191,19 @@ class Switch(dict):
 
 def determine_heatmap_height(nr_persons):
 
-    switch = Switch({
-        range(0, 3): "10%",
-        range(3, 5): "15%",
-        range(5, 10): "25%",
-        range(10, 15): "35%",
-        range(15, 20): "40%",
-        range(20, 25): "45%",
-        range(25, 35): "45%",
-        range(35, 40): "60%",
-        range(40, 9999): "75%",
-    })
+    switch = Switch(
+        {
+            range(0, 3): "10%",
+            range(3, 5): "15%",
+            range(5, 10): "25%",
+            range(10, 15): "35%",
+            range(15, 20): "40%",
+            range(20, 25): "45%",
+            range(25, 35): "45%",
+            range(35, 40): "60%",
+            range(40, 9999): "75%",
+        }
+    )
 
     print(nr_persons)
     print(switch[nr_persons])
@@ -217,15 +228,17 @@ def read_ground_truth(filename, delimiter="\t"):
     with open(filename, newline="") as csv_file:
         titles = csv.reader(csv_file, delimiter=delimiter)
         for row in titles:
-            data.append({
-                "title": row[0],
-                "label": row[1],
-                "date": row[2],
-                "url": row[3],
-                "ent1": row[4],
-                "ent2": row[5],
-                "ent1_id": row[6],
-                "ent2_id": row[7],
-            })
+            data.append(
+                {
+                    "title": row[0],
+                    "label": row[1],
+                    "date": row[2],
+                    "url": row[3],
+                    "ent1": row[4],
+                    "ent2": row[5],
+                    "ent1_id": row[6],
+                    "ent2_id": row[7],
+                }
+            )
 
     return data

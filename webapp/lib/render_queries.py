@@ -23,7 +23,7 @@ from webapp.webapp.lib.sparql_queries import (
     get_nr_of_persons,
     get_total_nr_of_articles,
     get_total_articles_by_year_by_relationship_type,
-    get_persons_articles_freq
+    get_persons_articles_freq,
 )
 
 from webapp.webapp.lib.utils import (
@@ -36,7 +36,7 @@ from webapp.webapp.lib.utils import (
     make_https,
     make_json,
     make_single_json,
-    per_vs_person_linkable
+    per_vs_person_linkable,
 )
 
 
@@ -57,19 +57,21 @@ def entity_full_story(wiki_id, annotate):
     if annotate:
         other = [clickable_title(r, wiki_id) for r in relationships["other"]]
         other_by = [clickable_title(r, wiki_id) for r in relationships["other_by"]]
-        data = {"opposes": opposes,
-                "supports": supports,
-                "opposed_by": opposed_by,
-                "supported_by": supported_by,
-                "other": other,
-                "other_by": other_by,
-                "wiki_id": person.wiki_id,
-                "name": person.name,
-                "image": make_https(person.image_url),
-                "parties": person.parties,
-                "positions": person.positions,
-                "occupations": person.occupations,
-                "education": person.education}
+        data = {
+            "opposes": opposes,
+            "supports": supports,
+            "opposed_by": opposed_by,
+            "supported_by": supported_by,
+            "other": other,
+            "other_by": other_by,
+            "wiki_id": person.wiki_id,
+            "name": person.name,
+            "image": make_https(person.image_url),
+            "parties": person.parties,
+            "positions": person.positions,
+            "occupations": person.occupations,
+            "education": person.education,
+        }
         return data
 
     # make json objects
@@ -82,31 +84,39 @@ def entity_full_story(wiki_id, annotate):
     # get the top-related entities
     person_as_subject, person_as_target = get_top_relationships(wiki_id)
 
-    who_person_opposes = [{'wiki_id': k, 'nr_articles': v,
-                           'name': get_short_name(k, wiki_id_info)}
-                          for k, v in person_as_subject['who_person_opposes'].items()]
+    who_person_opposes = [
+        {"wiki_id": k, "nr_articles": v, "name": get_short_name(k, wiki_id_info)}
+        for k, v in person_as_subject["who_person_opposes"].items()
+    ]
 
-    who_person_supports = [{'wiki_id': k, 'nr_articles': v,
-                            'name': get_short_name(k, wiki_id_info)}
-                           for k, v in person_as_subject['who_person_supports'].items()]
+    who_person_supports = [
+        {"wiki_id": k, "nr_articles": v, "name": get_short_name(k, wiki_id_info)}
+        for k, v in person_as_subject["who_person_supports"].items()
+    ]
 
-    who_opposes_person = [{'wiki_id': k, 'nr_articles': v,
-                           'name': get_short_name(k, wiki_id_info)}
-                          for k, v in person_as_target['who_opposes_person'].items()]
+    who_opposes_person = [
+        {"wiki_id": k, "nr_articles": v, "name": get_short_name(k, wiki_id_info)}
+        for k, v in person_as_target["who_opposes_person"].items()
+    ]
 
-    who_supports_person = [{'wiki_id': k, 'nr_articles': v,
-                            'name': get_short_name(k, wiki_id_info)}
-                           for k, v in person_as_target['who_supports_person'].items()]
+    who_supports_person = [
+        {"wiki_id": k, "nr_articles": v, "name": get_short_name(k, wiki_id_info)}
+        for k, v in person_as_target["who_supports_person"].items()
+    ]
 
     top_entities_in_rel_type = {
-        "who_person_opposes": sorted(who_person_opposes, key=lambda x: x['nr_articles'],
-                                     reverse=True),
-        "who_person_supports": sorted(who_person_supports, key=lambda x: x['nr_articles'],
-                                      reverse=True),
-        "who_opposes_person": sorted(who_opposes_person, key=lambda x: x['nr_articles'],
-                                     reverse=True),
-        "who_supports_person": sorted(who_supports_person, key=lambda x: x['nr_articles'],
-                                      reverse=True),
+        "who_person_opposes": sorted(
+            who_person_opposes, key=lambda x: x["nr_articles"], reverse=True
+        ),
+        "who_person_supports": sorted(
+            who_person_supports, key=lambda x: x["nr_articles"], reverse=True
+        ),
+        "who_opposes_person": sorted(
+            who_opposes_person, key=lambda x: x["nr_articles"], reverse=True
+        ),
+        "who_supports_person": sorted(
+            who_supports_person, key=lambda x: x["nr_articles"], reverse=True
+        ),
     }
 
     # get the data to create the graph
@@ -121,23 +131,20 @@ def entity_full_story(wiki_id, annotate):
         "positions": person.positions,
         "occupations": person.occupations,
         "education": person.education,
-
         # ChartJS: titles/articles frequency by relationships by year
         "year_labels": chart_js_data["labels"],
         "opposed_freq": chart_js_data["opposed_freq"],
         "supported_freq": chart_js_data["supported_freq"],
         "opposed_by_freq": chart_js_data["opposed_by_freq"],
         "supported_by_freq": chart_js_data["supported_by_freq"],
-
         # top-persons in each relationship
         "top_relations": top_entities_in_rel_type,
-
         # bootstrap-table: relationships in JSON
-        'opposed': opposed_json,
-        'supported': supported_json,
-        'opposed_by': opposed_by_json,
-        'supported_by': supported_by_json,
-        'all_relationships': all_relationships_json
+        "opposed": opposed_json,
+        "supported": supported_json,
+        "opposed_by": opposed_by_json,
+        "supported_by": supported_by_json,
+        "all_relationships": all_relationships_json,
     }
 
     return data
@@ -157,10 +164,12 @@ def build_relationships_by_year(wiki_id: str):
     opposed_freq = {k: opposed_freq_sum[k] for k in sorted(opposed_freq_sum)}
 
     # supported_by
-    supported_by_freq_one = get_person_relationships_by_year(wiki_id, "ent2_supports_ent1",
-                                                             ent="ent1")
-    supported_by_freq_two = get_person_relationships_by_year(wiki_id, "ent1_supports_ent2",
-                                                             ent="ent2")
+    supported_by_freq_one = get_person_relationships_by_year(
+        wiki_id, "ent2_supports_ent1", ent="ent1"
+    )
+    supported_by_freq_two = get_person_relationships_by_year(
+        wiki_id, "ent1_supports_ent2", ent="ent2"
+    )
     supported_by_freq_sum = Counter(supported_by_freq_one) + Counter(supported_by_freq_two)
     supported_by_freq = {k: supported_by_freq_sum[k] for k in sorted(supported_by_freq_sum)}
 
@@ -212,10 +221,10 @@ def get_party_members(wiki_id):
     sorted_persons = sorted(persons, key=lambda x: x.nr_articles, reverse=True)
 
     return {
-        'members': sorted_persons,
-        'party_name': party_name,
-        'party_logo': party_logo,
-        'party_wiki_id': wiki_id
+        "members": sorted_persons,
+        "party_name": party_name,
+        "party_logo": party_logo,
+        "party_wiki_id": wiki_id,
     }
 
 
@@ -246,11 +255,13 @@ def party_vs_party(party_a, party_b, relationship, start_year, end_year):
     for r in results:
         rel_freq_year[r["date"][0:4]] += 1
 
-    return {'relationships_json': relationships_json,
-            'rel_freq_year': [rel_freq_year[year] for year in rel_freq_year.keys()],
-            'relationship_text': rel_text,
-            'relationship_color': rel_color,
-            'labels': get_chart_labels_min_max()}
+    return {
+        "relationships_json": relationships_json,
+        "rel_freq_year": [rel_freq_year[year] for year in rel_freq_year.keys()],
+        "relationship_text": rel_text,
+        "relationship_color": rel_color,
+        "labels": get_chart_labels_min_max(),
+    }
 
 
 def person_vs_party(person_wiki_id, party_wiki_id, relationship, start_year, end_year):
@@ -277,25 +288,28 @@ def person_vs_party(person_wiki_id, party_wiki_id, relationship, start_year, end
 
     for r in results:
         year = r["date"][0:4]
-        wiki_id = r["ent2_wiki"] if r['rel_type'].startswith('ent1') else r["ent1_wiki"]
-        name = wiki_id_info[wiki_id.split("/")[-1]]['name']
+        wiki_id = r["ent2_wiki"] if r["rel_type"].startswith("ent1") else r["ent1_wiki"]
+        name = wiki_id_info[wiki_id.split("/")[-1]]["name"]
         entities_freq_year[name][year] += 1
         rel_freq_year[year] += 1
 
     # transform the counts from above into the heatmap structure needed by the JS lib
-    heatmap = [{'name': k, 'data': [{'x': year, 'y': freq} for year, freq in v.items()]}
-               for k, v in entities_freq_year.items()]
+    heatmap = [
+        {"name": k, "data": [{"x": year, "y": freq} for year, freq in v.items()]}
+        for k, v in entities_freq_year.items()
+    ]
     sorted_heatmap = sorted(heatmap, key=lambda x: x["name"], reverse=True)
     heatmap_height = determine_heatmap_height(len(sorted_heatmap))
 
     return {
-        'relationships_json': relationships_json,
-        'labels': get_chart_labels_min_max(),
-        'rel_freq_year': [rel_freq_year[year] for year in rel_freq_year.keys()],
-        'relationship_text': rel_text,
-        'relationship_color': rel_color,
-        'heatmap': sorted_heatmap,
-        'heatmap_height': heatmap_height}
+        "relationships_json": relationships_json,
+        "labels": get_chart_labels_min_max(),
+        "rel_freq_year": [rel_freq_year[year] for year in rel_freq_year.keys()],
+        "relationship_text": rel_text,
+        "relationship_color": rel_color,
+        "heatmap": sorted_heatmap,
+        "heatmap_height": heatmap_height,
+    }
 
 
 def party_vs_person(party_wiki_id, per_wiki_id, relationship, start_year, end_year):
@@ -322,25 +336,28 @@ def party_vs_person(party_wiki_id, per_wiki_id, relationship, start_year, end_ye
 
     for r in results:
         year = r["date"][0:4]
-        wiki_id = r["ent1_wiki"] if r['rel_type'].startswith('ent1') else r["ent2_wiki"]
-        name = wiki_id_info[wiki_id.split("/")[-1]]['name']
+        wiki_id = r["ent1_wiki"] if r["rel_type"].startswith("ent1") else r["ent2_wiki"]
+        name = wiki_id_info[wiki_id.split("/")[-1]]["name"]
         entities_freq_year[name][year] += 1
         rel_freq_year[year] += 1
 
     # transform the counts from above into the heatmap structure needed by the JS lib
-    heatmap = [{'name': k, 'data': [{'x': year, 'y': freq} for year, freq in v.items()]}
-               for k, v in entities_freq_year.items()]
+    heatmap = [
+        {"name": k, "data": [{"x": year, "y": freq} for year, freq in v.items()]}
+        for k, v in entities_freq_year.items()
+    ]
     sorted_heatmap = sorted(heatmap, key=lambda x: x["name"], reverse=True)
     heatmap_height = determine_heatmap_height(len(sorted_heatmap))
 
     return {
-        'relationships_json': relationships_json,
-        'labels': get_chart_labels_min_max(),
-        'rel_freq_year': [rel_freq_year[year] for year in rel_freq_year.keys()],
-        'relationship_text': rel_text,
-        'relationship_color': rel_color,
-        'heatmap': sorted_heatmap,
-        'heatmap_height': heatmap_height}
+        "relationships_json": relationships_json,
+        "labels": get_chart_labels_min_max(),
+        "rel_freq_year": [rel_freq_year[year] for year in rel_freq_year.keys()],
+        "relationship_text": rel_text,
+        "relationship_color": rel_color,
+        "heatmap": sorted_heatmap,
+        "heatmap_height": heatmap_height,
+    }
 
 
 def person_vs_person(per_one, per_two, relationship, start_year, end_year, annotate):
@@ -354,10 +371,18 @@ def person_vs_person(per_one, per_two, relationship, start_year, end_year, annot
         per_vs_person_linkable(r)
 
     if annotate:
-        items = [{"url": r["url"], "date": r["date"], "title": r["title"],
-                  "title_clickable": r["title_clickable"], "score": r["score"],
-                  "rel_type": r["rel_type"]} for r in results]
-        return {'items': items}
+        items = [
+            {
+                "url": r["url"],
+                "date": r["date"],
+                "title": r["title"],
+                "title_clickable": r["title_clickable"],
+                "score": r["score"],
+                "rel_type": r["rel_type"],
+            }
+            for r in results
+        ]
+        return {"items": items}
 
     relationships_json = make_json([r for r in results])
     rel_freq_year = {year: 0 for year in get_chart_labels_min_max()}
@@ -365,11 +390,11 @@ def person_vs_person(per_one, per_two, relationship, start_year, end_year, annot
         rel_freq_year[r["date"][0:4]] += 1
 
     data = {
-        'relationships': relationships_json,
-        'relationship_text': rel_text,
-        'relationship_color': rel_color,
-        'rel_freq_year': [rel_freq_year[year] for year in rel_freq_year.keys()],
-        'labels': get_chart_labels_min_max(),
+        "relationships": relationships_json,
+        "relationship_text": rel_text,
+        "relationship_color": rel_color,
+        "rel_freq_year": [rel_freq_year[year] for year in rel_freq_year.keys()],
+        "labels": get_chart_labels_min_max(),
     }
 
     return data
@@ -408,37 +433,37 @@ def entity_vs_entity(wiki_id_one, wiki_id_two):
 
     for x in results:
         per_vs_person_linkable(x)
-        year = x['date'][0:4]
+        year = x["date"][0:4]
 
-        if x['rel_type'] == 'ent1_opposes_ent2':
-            if x['ent1_wiki'] == wiki_id_one:
+        if x["rel_type"] == "ent1_opposes_ent2":
+            if x["ent1_wiki"] == wiki_id_one:
                 opposes.append(make_single_json(x))
                 opposes_years_counts[year] += 1
-            if x['ent1_wiki'] == wiki_id_two:
+            if x["ent1_wiki"] == wiki_id_two:
                 opposed_by.append(make_single_json(x))
                 opposed_by_years_counts[year] += 1
 
-        if x['rel_type'] == 'ent2_opposes_ent1':
-            if x['ent1_wiki'] == wiki_id_one:
+        if x["rel_type"] == "ent2_opposes_ent1":
+            if x["ent1_wiki"] == wiki_id_one:
                 opposed_by.append(make_single_json(x))
                 opposed_by_years_counts[year] += 1
-            if x['ent1_wiki'] == wiki_id_two:
+            if x["ent1_wiki"] == wiki_id_two:
                 opposes.append(make_single_json(x))
                 opposes_years_counts[year] += 1
 
-        if x['rel_type'] == 'ent1_supports_ent2':
-            if x['ent1_wiki'] == wiki_id_one:
+        if x["rel_type"] == "ent1_supports_ent2":
+            if x["ent1_wiki"] == wiki_id_one:
                 supports.append(make_single_json(x))
                 supports_years_counts[year] += 1
-            if x['ent1_wiki'] == wiki_id_two:
+            if x["ent1_wiki"] == wiki_id_two:
                 supported_by.append(make_single_json(x))
                 supported_by_years_counts[year] += 1
 
-        if x['rel_type'] == 'ent2_supports_ent1':
-            if x['ent1_wiki'] == wiki_id_one:
+        if x["rel_type"] == "ent2_supports_ent1":
+            if x["ent1_wiki"] == wiki_id_one:
                 supported_by.append(make_single_json(x))
                 supported_by_years_counts[year] += 1
-            if x['ent1_wiki'] == wiki_id_two:
+            if x["ent1_wiki"] == wiki_id_two:
                 supports.append(make_single_json(x))
                 supports_years_counts[year] += 1
 
@@ -446,22 +471,20 @@ def entity_vs_entity(wiki_id_one, wiki_id_two):
 
     return {
         # persons information
-        'person_one_info': person_one_info,
-        'person_two_info': person_two_info,
-
+        "person_one_info": person_one_info,
+        "person_two_info": person_two_info,
         # relationships
-        'opposed': opposes,
-        'supported': supports,
-        'opposed_by': opposed_by,
-        'supported_by': supported_by,
-        'all_relationships': all_json,
-
+        "opposed": opposes,
+        "supported": supports,
+        "opposed_by": opposed_by,
+        "supported_by": supported_by,
+        "all_relationships": all_json,
         # chart information: note: ChartJS expects a list of values for the 'y' axis
-        'labels': get_chart_labels_min_max(),
-        'ent1_opposes_ent2': list(opposes_years_counts.values()),
-        'ent1_supports_ent2': list(supports_years_counts.values()),
-        'ent1_opposed_by_ent2': list(opposed_by_years_counts.values()),
-        'ent1_supported_by_ent2': list(supported_by_years_counts.values())
+        "labels": get_chart_labels_min_max(),
+        "ent1_opposes_ent2": list(opposes_years_counts.values()),
+        "ent1_supports_ent2": list(supports_years_counts.values()),
+        "ent1_opposed_by_ent2": list(opposed_by_years_counts.values()),
+        "ent1_supported_by_ent2": list(supported_by_years_counts.values()),
     }
 
 
@@ -479,17 +502,17 @@ def get_stats():
     # but we aggregate relationships: 'opposes', 'supports, i.e., discard direction and 'other'
     all_years = get_chart_labels_min_max()
     values = get_total_articles_by_year_by_relationship_type()
-    aggregated_values = defaultdict(lambda: {'opposes': 0, 'supports': 0})
+    aggregated_values = defaultdict(lambda: {"opposes": 0, "supports": 0})
     for year in all_years:
         if year in values.keys():
             for rel, freq in values[year].items():
-                if 'opposes' in rel:
-                    aggregated_values[year]['opposes'] += int(freq)
-                if 'supports' in rel:
-                    aggregated_values[year]['supports'] += int(freq)
+                if "opposes" in rel:
+                    aggregated_values[year]["opposes"] += int(freq)
+                if "supports" in rel:
+                    aggregated_values[year]["supports"] += int(freq)
         else:
-            aggregated_values[year]['opposes'] = 0
-            aggregated_values[year]['supports'] = 0
+            aggregated_values[year]["opposes"] = 0
+            aggregated_values[year]["supports"] = 0
 
     # personalities frequency chart
     per_freq_labels = []
@@ -510,11 +533,9 @@ def get_stats():
         "nr_parties": nr_parties,
         "nr_persons": nr_persons,
         "nr_all_no_other_articles": nr_all_no_other_articles,
-
         "nr_articles_year_labels": all_years,
-        "supports": [aggregated_values[year]['supports'] for year in aggregated_values],
-        "opposes": [aggregated_values[year]['opposes'] for year in aggregated_values],
-
+        "supports": [aggregated_values[year]["supports"] for year in aggregated_values],
+        "opposes": [aggregated_values[year]["opposes"] for year in aggregated_values],
         "per_freq_labels": per_freq_labels[0:500],
         "per_freq_values": per_freq_values[0:500],
         "per_co_occurrence_labels": co_occurrences_labels[0:500],

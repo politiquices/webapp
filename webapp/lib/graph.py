@@ -7,17 +7,17 @@ from webapp.webapp.lib.sparql_queries import query_sparql
 
 def get_entity_network_sparql(wiki_id, relation, freq_min, freq_max, year_from, year_to):
 
-    if relation == 'APOIA':
-        rel_type_a = 'ent1_supports_ent2'
-        rel_type_b = 'ent1_supports_ent2'
+    if relation == "APOIA":
+        rel_type_a = "ent1_supports_ent2"
+        rel_type_b = "ent1_supports_ent2"
 
-    if relation == 'ACUSA':
-        rel_type_a = 'ent1_opposes_ent2'
-        rel_type_b = 'ent1_opposes_ent2'
+    if relation == "ACUSA":
+        rel_type_a = "ent1_opposes_ent2"
+        rel_type_b = "ent1_opposes_ent2"
 
-    if relation == 'ACUSA|APOIA':
-        rel_type_a = 'ent1_supports_ent2'
-        rel_type_b = 'ent1_opposes_ent2'
+    if relation == "ACUSA|APOIA":
+        rel_type_a = "ent1_supports_ent2"
+        rel_type_b = "ent1_opposes_ent2"
 
     query = f"""
     SELECT DISTINCT ?date ?rel_type ?ent1 ?arquivo_doc WHERE 
@@ -40,22 +40,22 @@ def get_entity_network_sparql(wiki_id, relation, freq_min, freq_max, year_from, 
     edges_agg = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     nodes_info = {}
 
-    for x in results['results']['bindings']:
-        date = x['date']['value']
-        ent1_id = x['ent1']['value'].split("/")[-1]
-        ent2_id = x['ent2']['value'].split("/")[-1]
-        url = x['arquivo_doc']['value']
-        relation = x['rel_type']['value']
+    for x in results["results"]["bindings"]:
+        date = x["date"]["value"]
+        ent1_id = x["ent1"]["value"].split("/")[-1]
+        ent2_id = x["ent2"]["value"].split("/")[-1]
+        url = x["arquivo_doc"]["value"]
+        relation = x["rel_type"]["value"]
 
         if ent1_id not in nodes_info:
-            nodes_info[x['r'].start_node['id']] = {
-                "id": x['r'].start_node['id'],
+            nodes_info[x["r"].start_node["id"]] = {
+                "id": x["r"].start_node["id"],
                 "label": get_short_name(x["s"]["id"], wiki_id_info),
                 "color": {
                     "border": "#2B7CE9",
                     "background": "#97C2FC",
                     "highlight": {"border": "#2B7CE9", "background": "#D2E5FF"},
-                }
+                },
             }
 
         edges_agg[relation][ent1_id][ent2_id] += 1
@@ -67,8 +67,9 @@ def get_entity_network_sparql(wiki_id, relation, freq_min, freq_max, year_from, 
         "color": {
             "border": "#2B7CE9",
             "background": "#97C2FC",
-            "highlight": {"border": "#2B7CE9", "background": "#D2E5FF"}
-        }}
+            "highlight": {"border": "#2B7CE9", "background": "#D2E5FF"},
+        },
+    }
 
     # filter nodes, include only those that are connected within the freq filter
     for rel_type, rels in edges_agg.items():
@@ -76,7 +77,7 @@ def get_entity_network_sparql(wiki_id, relation, freq_min, freq_max, year_from, 
             for t, freq in targets.items():
                 if freq_min <= freq <= freq_max:
 
-                    if 'opposes' in rel_type:
+                    if "opposes" in rel_type:
                         rel_text = "opõe-se"
                         color = "#FF0000"
                         highlight = "#780000"
@@ -109,17 +110,17 @@ def get_entity_network_sparql(wiki_id, relation, freq_min, freq_max, year_from, 
 
 def get_network_sparql(relation, year_from, year_to, freq_max, freq_min):
 
-    if relation == 'APOIA':
-        rel_type_a = 'ent1_supports_ent2'
-        rel_type_b = 'ent1_supports_ent2'
+    if relation == "APOIA":
+        rel_type_a = "ent1_supports_ent2"
+        rel_type_b = "ent1_supports_ent2"
 
-    if relation == 'ACUSA':
-        rel_type_a = 'ent1_opposes_ent2'
-        rel_type_b = 'ent1_opposes_ent2'
+    if relation == "ACUSA":
+        rel_type_a = "ent1_opposes_ent2"
+        rel_type_b = "ent1_opposes_ent2"
 
-    if relation == 'ACUSA|APOIA':
-        rel_type_a = 'ent1_supports_ent2'
-        rel_type_b = 'ent1_opposes_ent2'
+    if relation == "ACUSA|APOIA":
+        rel_type_a = "ent1_supports_ent2"
+        rel_type_b = "ent1_opposes_ent2"
 
     query = f"""
         PREFIX politiquices: <http://www.politiquices.pt/>
@@ -146,12 +147,12 @@ def get_network_sparql(relation, year_from, year_to, freq_max, freq_min):
 
     results = query_sparql(query, "politiquices")
 
-    for x in results['results']['bindings']:
-        date = x['date']['value']
-        ent1_id = x['ent1']['value'].split("/")[-1]
-        ent2_id = x['ent2']['value'].split("/")[-1]
-        url = x['arquivo_doc']['value']
-        relation = x['rel_type']['value']
+    for x in results["results"]["bindings"]:
+        date = x["date"]["value"]
+        ent1_id = x["ent1"]["value"].split("/")[-1]
+        ent2_id = x["ent2"]["value"].split("/")[-1]
+        url = x["arquivo_doc"]["value"]
+        relation = x["rel_type"]["value"]
 
         if ent1_id not in nodes_info:
             nodes_info[ent1_id] = {
@@ -189,7 +190,7 @@ def get_network_sparql(relation, year_from, year_to, freq_max, freq_min):
             for t, freq in targets.items():
                 if freq_min <= freq <= freq_max:
 
-                    if 'opposes' in rel_type:
+                    if "opposes" in rel_type:
                         rel_text = "opõe-se"
                         color = "#FF0000"
                         highlight = "#780000"
@@ -223,4 +224,3 @@ def get_network_sparql(relation, year_from, year_to, freq_max, freq_min):
     nodes = [node_info for node_id, node_info in nodes_info.items() if node_id in nodes_in_graph]
 
     return nodes, edges
-

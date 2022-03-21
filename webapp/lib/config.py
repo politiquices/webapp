@@ -9,4 +9,4 @@ live_wikidata = "https://query.wikidata.org/sparql"
 ps_logo = "/static/images/Logo_do_Partido_Socialista(Portugal).png"
 no_image = "/static/images/no_picture.jpg"
 static_data = "app/static/json/"
-entities_batch_size = 16    # number of entity cards to read in batch when scrolling down
+entities_batch_size = 16  # number of entity cards to read in batch when scrolling down
