@@ -3,7 +3,7 @@ from collections import defaultdict
 from functools import lru_cache
 
 from SPARQLWrapper import SPARQLWrapper, JSON
-
+from webapp.webapp.lib.cache import wiki_id_info
 from webapp.webapp.lib.data_models import OfficePosition, Person, PoliticalParty
 from webapp.webapp.lib.config import (
     live_wikidata,
@@ -434,6 +434,7 @@ def get_person_info(wiki_id):
         # political parties
         if "political_party" in e:
             party_image_url = no_image
+            
             # add 'PS' logo since it's on on wikidata
             if e["political_party"]["value"] == "http://www.wikidata.org/entity/Q847263":
                 party_image_url = ps_logo
@@ -442,7 +443,7 @@ def get_person_info(wiki_id):
                 wiki_id=e["political_party"]["value"].split("/")[-1],
                 name=e["political_party_label"]["value"],
                 image_url=make_https(e["political_party_logo"]["value"])
-                if "political_party_logo" in e
+                if "political_party_logo" in e and e["political_party"]["value"] != "http://www.wikidata.org/entity/Q847263"
                 else party_image_url,
             )
             if party not in parties:
@@ -620,6 +621,7 @@ def get_person_relationships(wiki_id):
                 "focus_ent": focus_ent,
                 "other_ent_url": "entity?q=" + other_ent_url,
                 "other_ent_name": other_ent_name,
+                "other_ent_image": wiki_id_info[other_ent_url]['image_url'],
                 "rel_type": rel_type,
             }
         )

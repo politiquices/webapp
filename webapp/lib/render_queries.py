@@ -145,6 +145,7 @@ def entity_full_story(wiki_id, annotate):
         "opposed_by": opposed_by_json,
         "supported_by": supported_by_json,
         "all_relationships": all_relationships_json,
+        "raw_relationships": relationships
     }
 
     return data

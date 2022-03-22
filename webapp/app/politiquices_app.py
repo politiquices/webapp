@@ -5,7 +5,7 @@ from webapp.webapp.lib.utils import read_ground_truth
 from webapp.webapp.lib.config import entities_batch_size
 from webapp.webapp.lib.utils import get_info
 from webapp.webapp.lib.graph import get_entity_network_sparql, get_network_sparql
-from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
+from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico, wiki_id_info
 from webapp.webapp.lib.render_queries import (
     party_vs_party,
     person_vs_party,
@@ -363,6 +363,14 @@ def entity_raw():
 
     # decide which template to use
     template = "entity_content.html" if from_search else "entity.html"
+
+    for k, v in data['raw_relationships'].items():
+        print(k)
+        for rel in v:
+            for entry, value in rel.items():
+                print(entry, value)                
+            print("----")
+        print("\n\n")
 
     return jsonify(data)
 
