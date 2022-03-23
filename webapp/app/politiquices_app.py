@@ -55,8 +55,8 @@ def load_entities():
 def detail_entity():
     # get args
     print(request.args)
-    from_search = True if "search" in request.args else False
-    annotate = True if "annotate" in request.args else False
+    from_search = bool("search" in request.args)
+    annotate = bool("annotate" in request.args)
     wiki_id = request.args.get("q")
 
     # get data
@@ -186,7 +186,7 @@ def queries():
         return render_template("index.html")
 
     # which type of rendering ?
-    annotate = True if "annotate" in request.args else False
+    annotate = bool("annotate")
 
     # time interval for the query
     year_from = request.args.get("year_from")
@@ -349,12 +349,10 @@ def only_other():
 @app.route("/entity_raw")
 def entity_raw():
     print(request.args)
-    from_search = True if "search" in request.args else False
-    annotate = True if "annotate" in request.args else False
     wiki_id = request.args.get("q")
 
     # get data
-    data = entity_full_story(wiki_id, annotate)
+    data = entity_full_story(wiki_id, False)
 
     for k, v in data["raw_relationships"].items():
         print(k)
