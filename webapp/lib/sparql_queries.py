@@ -434,7 +434,7 @@ def get_person_info(wiki_id):
         # political parties
         if "political_party" in e:
             party_image_url = no_image
-            
+
             # add 'PS' logo since it's on on wikidata
             if e["political_party"]["value"] == "http://www.wikidata.org/entity/Q847263":
                 party_image_url = ps_logo
@@ -443,7 +443,8 @@ def get_person_info(wiki_id):
                 wiki_id=e["political_party"]["value"].split("/")[-1],
                 name=e["political_party_label"]["value"],
                 image_url=make_https(e["political_party_logo"]["value"])
-                if "political_party_logo" in e and e["political_party"]["value"] != "http://www.wikidata.org/entity/Q847263"
+                if "political_party_logo" in e
+                and e["political_party"]["value"] != "http://www.wikidata.org/entity/Q847263"
                 else party_image_url,
             )
             if party not in parties:
@@ -497,8 +498,11 @@ def get_person_detailed_info(wiki_id):
         """
 
     results = query_sparql(PREFIXES + "\n" + occupation_query, "wikidata")
-    occupations = [x["occupation_label"]["value"] for x in results["results"]["bindings"] 
-                   if x["occupation_label"]["value"]!='político']
+    occupations = [
+        x["occupation_label"]["value"]
+        for x in results["results"]["bindings"]
+        if x["occupation_label"]["value"] != "político"
+    ]
 
     results = query_sparql(PREFIXES + "\n" + education_query, "wikidata")
     education = [x["educatedAt_label"]["value"] for x in results["results"]["bindings"]]
@@ -621,7 +625,7 @@ def get_person_relationships(wiki_id):
                 "focus_ent": focus_ent,
                 "other_ent_url": "entity?q=" + other_ent_url,
                 "other_ent_name": other_ent_name,
-                "other_ent_image": wiki_id_info[other_ent_url]['image_url'],
+                "other_ent_image": wiki_id_info[other_ent_url]["image_url"],
                 "rel_type": rel_type,
             }
         )

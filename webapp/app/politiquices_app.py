@@ -5,7 +5,7 @@ from webapp.webapp.lib.utils import read_ground_truth
 from webapp.webapp.lib.config import entities_batch_size
 from webapp.webapp.lib.utils import get_info
 from webapp.webapp.lib.graph import get_entity_network_sparql, get_network_sparql
-from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico, wiki_id_info
+from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
 from webapp.webapp.lib.render_queries import (
     party_vs_party,
     person_vs_party,
@@ -225,7 +225,7 @@ def queries():
             rel_freq_year=data["rel_freq_year"],
         )
 
-    elif e1_type == "party" and e2_type == "person":
+    if e1_type == "party" and e2_type == "person":
         data = party_vs_person(entity_one, entity_two, rel_type, year_from, year_to)
 
         if data is None:
@@ -245,7 +245,7 @@ def queries():
             relationship_color=data["relationship_color"],
         )
 
-    elif e1_type == "person" and e2_type == "party":
+    if e1_type == "person" and e2_type == "party":
         data = person_vs_party(entity_one, entity_two, rel_type, year_from, year_to)
 
         if data is None:
@@ -265,7 +265,7 @@ def queries():
             relationship_color=data["relationship_color"],
         )
 
-    elif e1_type == "party" and e2_type == "party":
+    if e1_type == "party" and e2_type == "party":
         data = party_vs_party(entity_one, entity_two, rel_type, year_from, year_to)
 
         if data is None:
@@ -348,7 +348,6 @@ def only_other():
 
 @app.route("/entity_raw")
 def entity_raw():
-    # get args
     print(request.args)
     from_search = True if "search" in request.args else False
     annotate = True if "annotate" in request.args else False
@@ -357,18 +356,11 @@ def entity_raw():
     # get data
     data = entity_full_story(wiki_id, annotate)
 
-    # render an annotation template
-    if annotate:
-        return render_template("entity_annotate.html", items=data)
-
-    # decide which template to use
-    template = "entity_content.html" if from_search else "entity.html"
-
-    for k, v in data['raw_relationships'].items():
+    for k, v in data["raw_relationships"].items():
         print(k)
         for rel in v:
             for entry, value in rel.items():
-                print(entry, value)                
+                print(entry, value)
             print("----")
         print("\n\n")
 
