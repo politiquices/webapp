@@ -7,6 +7,7 @@ from webapp.webapp.lib.cache import (
     all_parties_members,
     top_co_occurrences,
     wiki_id_info,
+    wiki_id_info_all
 )
 from webapp.webapp.lib.data_models import Person
 from webapp.webapp.lib.sparql_queries import (
@@ -49,10 +50,10 @@ def entity_full_story(wiki_id, annotate):
     relationships = get_person_relationships(wiki_id)
 
     # create a clickable title
-    opposes = [clickable_title(r, wiki_id) for r in relationships["opposes"]]
-    supports = [clickable_title(r, wiki_id) for r in relationships["supports"]]
-    opposed_by = [clickable_title(r, wiki_id) for r in relationships["opposed_by"]]
-    supported_by = [clickable_title(r, wiki_id) for r in relationships["supported_by"]]
+    opposes = [clickable_title(r, wiki_id, wiki_id_info_all) for r in relationships["opposes"]]
+    supports = [clickable_title(r, wiki_id, wiki_id_info_all) for r in relationships["supports"]]
+    opposed_by = [clickable_title(r, wiki_id, wiki_id_info_all) for r in relationships["opposed_by"]]
+    supported_by = [clickable_title(r, wiki_id, wiki_id_info_all) for r in relationships["supported_by"]]
 
     if annotate:
         other = [clickable_title(r, wiki_id) for r in relationships["other"]]

@@ -3,7 +3,6 @@ from collections import defaultdict
 from functools import lru_cache
 
 from SPARQLWrapper import SPARQLWrapper, JSON
-from webapp.webapp.lib.cache import wiki_id_info
 from webapp.webapp.lib.data_models import OfficePosition, Person, PoliticalParty
 from webapp.webapp.lib.config import (
     live_wikidata,
@@ -225,13 +224,16 @@ def get_all_parties_and_members_with_relationships():
     not 'other'
     """
     query = f"""
-        SELECT DISTINCT ?political_party ?party_label ?party_logo ?party_country 
+        SELECT DISTINCT ?political_party ?party_label ?party_logo ?country_label 
                         (COUNT(?person) as ?nr_personalities)
         WHERE {{
             ?person wdt:P102 ?political_party .    
             ?political_party rdfs:label ?party_label . FILTER(LANG(?party_label) = "pt")
             OPTIONAL {{ ?political_party wdt:P154 ?party_logo. }}
-            OPTIONAL {{ ?political_party wdt:P17 ?party_country. }}
+            OPTIONAL {{ 
+                ?political_party wdt:P17 ?party_country. 
+                ?party_country rdfs:label ?country_label . FILTER(LANG(?country_label) = "pt")
+                }}
             SERVICE <{politiquices_endpoint}> {{
                 SELECT DISTINCT ?person 
                 WHERE {{
@@ -245,7 +247,7 @@ def get_all_parties_and_members_with_relationships():
                 }}
             }}
          }}
-        GROUP BY ?political_party ?party_label ?party_logo ?party_country
+        GROUP BY ?political_party ?party_label ?party_logo ?country_label 
         ORDER BY DESC(?nr_personalities)
         """
     results = query_sparql(PREFIXES + "\n" + query, "wikidata")
@@ -254,13 +256,13 @@ def get_all_parties_and_members_with_relationships():
         party_logo = x["party_logo"]["value"] if "party_logo" in x else no_image
         if x["political_party"]["value"].split("/")[-1] == "Q847263":
             party_logo = ps_logo
-        country = x["party_country"]["value"].split("/")[-1] if x.get("party_country") else None
+        country = x["country_label"]["value"] if x.get("country_label") else None
         political_parties.append(
             {
                 "wiki_id": x["political_party"]["value"].split("/")[-1],
                 "party_label": x["party_label"]["value"],
                 "party_logo": make_https(party_logo),
-                "party_country": country,
+                "country": country,
                 "nr_personalities": x["nr_personalities"]["value"],
             }
         )
@@ -625,7 +627,6 @@ def get_person_relationships(wiki_id):
                 "focus_ent": focus_ent,
                 "other_ent_url": "entity?q=" + other_ent_url,
                 "other_ent_name": other_ent_name,
-                "other_ent_image": wiki_id_info[other_ent_url]["image_url"],
                 "rel_type": rel_type,
             }
         )

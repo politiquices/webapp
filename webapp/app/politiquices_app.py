@@ -345,26 +345,18 @@ def only_other():
     results = personalities_only_with_other()
     return render_template("incomplete_entities_no_rels.html", items=results)
 
-
+# new endpoints
 @app.route("/entity_raw")
 def entity_raw():
-    print(request.args)
     wiki_id = request.args.get("q")
-
-    # get data
     data = entity_full_story(wiki_id, False)
-
-    for k, v in data["raw_relationships"].items():
-        print(k)
-        for rel in v:
-            for entry, value in rel.items():
-                print(entry, value)
-            print("----")
-        print("\n\n")
-
     return jsonify(data)
+
+@app.route("/parties_raw")
+def all_parties_raw():
+    return jsonify(all_parties_info)
 
 
 if __name__ == "__main__":
     # app.run()
-    app.run(host="localhost", port=5000, debug=True)
+    app.run(host="localhost", port=5000, debug=False)

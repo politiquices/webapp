@@ -50,7 +50,7 @@ def per_vs_person_linkable(r):
                     height="{r['image_height']}"></a>"""
 
 
-def clickable_title(r, wiki_id):
+def clickable_title(r, wiki_id, wiki_id_info_all):
     # add link to focus entity
     link_one = r["title"].replace(
         r["focus_ent"], '<a id="ent_1" href="entity?q=' + wiki_id + '">' + r["focus_ent"] + "</a>"
@@ -68,6 +68,8 @@ def clickable_title(r, wiki_id):
     r["ent2_wiki"] = "https://www.wikidata.org/entity/" + r["other_ent_url"].split("q=")[1]
     r["ent1_str"] = r["focus_ent"]
     r["ent2_str"] = r["other_ent_name"]
+    ent2_wiki = r["other_ent_url"].split("q=")[1]
+    r["other_ent_image"] = wiki_id_info_all[ent2_wiki]['image_url']
 
     return r
 

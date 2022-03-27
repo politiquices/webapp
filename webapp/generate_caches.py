@@ -35,20 +35,25 @@ def get_entities():
         per_info[wiki_id]["name"] = all_per[wiki_id]["name"]
         per_info[wiki_id]["image_url"] = all_per[wiki_id]["image_url"]
 
-    return sorted(list(per_info.values()), key=lambda x: x["nr_articles"], reverse=True)
+    return all_per, sorted(list(per_info.values()), key=lambda x: x["nr_articles"], reverse=True)
 
 
 def personalities_json_cache():
     """
     Generates JSONs from SPARQL queries:
-      - 'all_entities_info.json': list of {name, image_url, nr_articles} sorted by nr_articles
+
+        'all_entities_info.json': list of {name, image_url, nr_articles} sorted by nr_articles
+                                  where is this being used?
+
       - 'persons.json': a sorted list by name of tuples (person_name, wiki_id)
+
       - 'wiki_id_info.json': mapping from wiki_id -> person_info
     """
 
     # 'all_entities_info.json' - display in 'Personalidades'
-    per_data = get_entities()
+    all_per, per_data = get_entities()
     print(f"{len(per_data)} entities card info (name + image + nr articles)")
+    print(f"{len(all_per)} all entities on Wikidata subset")
     with open(static_data + "all_entities_info.json", "w") as f_out:
         json.dump(per_data, f_out, indent=4)
 
@@ -71,11 +76,17 @@ def personalities_json_cache():
             "image_url": x["image_url"],
             "nr_articles": x["nr_articles"],
         }
-        shorter_name = shorter_names.get(x["wiki_id"], None)
-        if shorter_name:
+        if shorter_name := shorter_names.get(x["wiki_id"], None):
             wiki_id[x["wiki_id"]].update({"shorter_name": shorter_name})
 
     with open(static_data + "wiki_id_info.json", "w") as f_out:
+        json.dump(wiki_id, f_out, indent=4)
+
+    # 'wiki_id_info_all.json'
+    wiki_id = {}
+    for k, v in all_per.items():
+        wiki_id[k] = {"name": v["name"], "image_url": v["image_url"]}
+    with open(static_data + "wiki_id_info_all.json", "w") as f_out:
         json.dump(wiki_id, f_out, indent=4)
 
     return set([x["wiki_id"] for x in persons]), wiki_id
@@ -101,6 +112,8 @@ def parties_json_cache(all_politiquices_persons):
 
     # 'all_parties_info.json' - display in 'Partidos'
     parties_data = get_all_parties_and_members_with_relationships()
+    sort_order = {"Portugal": 0, None: 3}
+    parties_data.sort(key=lambda parties_data: sort_order.get(parties_data['country'],2))
     print(f"{len(parties_data)} parties info (image + nr affiliated w/ relationships")
     with open(static_data + "all_parties_info.json", "w") as f_out:
         json.dump(parties_data, f_out, indent=4)
@@ -109,7 +122,7 @@ def parties_json_cache(all_politiquices_persons):
     parties = [
         {"name": parties_mapping.get(x["party_label"], x["party_label"]), "wiki_id": x["wiki_id"]}
         for x in sorted(parties_data, key=lambda x: x["party_label"])
-        if x["party_country"] == "Q45"
+        if x["country"] == "Portugal"
     ]
     with open(static_data + "parties.json", "w") as f_out:
         json.dump(parties, f_out, indent=4)
