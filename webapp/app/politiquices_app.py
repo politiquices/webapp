@@ -20,6 +20,7 @@ from webapp.webapp.lib.render_queries import (
 from webapp.webapp.lib.sparql_queries import (
     get_entities_without_image,
     get_relationships_to_annotate,
+    get_timeline_personalities,
     personalities_only_with_other,
 )
 
@@ -357,6 +358,13 @@ def all_parties_raw():
     return jsonify(all_parties_info)
 
 
+@app.route("/timeline", methods = ['POST'])
+def timeline():
+    data = request.json
+    results = get_timeline_personalities(data)
+    return jsonify("whatever")
+
+
 if __name__ == "__main__":
     # app.run()
-    app.run(host="localhost", port=5000, debug=False)
+    app.run(host="localhost", port=5000, debug=True)

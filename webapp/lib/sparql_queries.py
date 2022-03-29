@@ -1,6 +1,7 @@
 import sys
 from collections import defaultdict
 from functools import lru_cache
+from typing import List
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 from webapp.webapp.lib.data_models import OfficePosition, Person, PoliticalParty
@@ -1080,6 +1081,47 @@ def get_entities_without_image():
         )
 
     return entities
+
+
+def get_timeline_personalities(wiki_ids: List[str]):
+
+    values = ' '.join(wiki_ids)
+
+    print(values)
+
+    query = f"""
+        PREFIX politiquices: <http://www.politiquices.pt/>
+        PREFIX      rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX        dc: <http://purl.org/dc/elements/1.1/>
+        PREFIX 		 ns1: <http://xmlns.com/foaf/0.1/>
+        PREFIX		 ns2: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX        wd: <http://www.wikidata.org/entity/>
+        PREFIX	     wdt: <http://www.wikidata.org/prop/direct/>
+
+
+        SELECT DISTINCT ?arquivo_doc ?date ?title ?rel_type ?ent1 ?ent1_str ?ent2 ?ent2_str 
+        WHERE {{
+                VALUES ?person_one {{{ values }}}
+                VALUES ?person_two {{{ values }}}
+                {{
+                    ?rel politiquices:ent1 ?person_one;
+                        politiquices:ent1 ?person_two;
+                        politiquices:ent1 ?ent1;
+                        politiquices:ent2 ?ent2;
+                        politiquices:ent1_str ?ent1_str;
+                        politiquices:ent2_str ?ent2_str;
+                        politiquices:url ?arquivo_doc; 
+                        politiquices:type ?rel_type.
+                    ?arquivo_doc dc:title ?title;
+                                dc:date  ?date .
+            }}
+        }}
+        """
+    result = query_sparql(PREFIXES + "\n" + query, "politiquices")
+    for r in result['results']['bindings']:
+        print(r)
+    
+    print(len(result['results']['bindings']))
 
 
 # relationships to re-annotate, e.g 'other'
