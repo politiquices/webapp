@@ -166,7 +166,7 @@ def get_persons_articles_freq():
                                 'ent1_supports_ent2' 'ent2_supports_ent1'} .
                                 
             ?rel politiquices:type ?rel_values .
-            { ?rel politiquices:ent1 ?person .} UNION { ?rel politiquices:ent2 ?person . }              
+            { ?rel politiquices:ent1 ?person .} UNION { ?rel politiquices:ent2 ?person . }
             ?rel politiquices:url ?url .
             ?rel politiquices:type ?rel_type .
         }
@@ -1087,8 +1087,6 @@ def get_timeline_personalities(wiki_ids: List[str]):
 
     values = ' '.join(wiki_ids)
 
-    print(values)
-
     query = f"""
         PREFIX politiquices: <http://www.politiquices.pt/>
         PREFIX      rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -1104,24 +1102,24 @@ def get_timeline_personalities(wiki_ids: List[str]):
                 VALUES ?person_one {{{ values }}}
                 VALUES ?person_two {{{ values }}}
                 {{
-                    ?rel politiquices:ent1 ?person_one;
-                        politiquices:ent1 ?person_two;
-                        politiquices:ent1 ?ent1;
-                        politiquices:ent2 ?ent2;
-                        politiquices:ent1_str ?ent1_str;
-                        politiquices:ent2_str ?ent2_str;
-                        politiquices:url ?arquivo_doc; 
-                        politiquices:type ?rel_type.
-                    ?arquivo_doc dc:title ?title;
+                    {{ ?rel politiquices:ent1 ?person_one .}} UNION {{ ?rel politiquices:ent2 ?person_two .}}
+                       ?rel politiquices:ent1 ?ent1;
+                            politiquices:ent2 ?ent2;
+                            politiquices:ent1_str ?ent1_str;
+                            politiquices:ent2_str ?ent2_str;
+                            politiquices:url ?arquivo_doc; 
+                            politiquices:type ?rel_type.
+
+                   ?arquivo_doc dc:title ?title;
                                 dc:date  ?date .
             }}
         }}
         """
+
+    print(query)
+
     result = query_sparql(PREFIXES + "\n" + query, "politiquices")
-    for r in result['results']['bindings']:
-        print(r)
-    
-    print(len(result['results']['bindings']))
+    return result['results']['bindings']
 
 
 # relationships to re-annotate, e.g 'other'

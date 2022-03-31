@@ -362,7 +362,11 @@ def all_parties_raw():
 def timeline():
     data = request.json
     results = get_timeline_personalities(data)
-    return jsonify("whatever")
+
+    for r in results:
+        print(r['title']['value'])
+
+    return jsonify(results)
 
 
 if __name__ == "__main__":
