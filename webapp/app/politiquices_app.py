@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import request, jsonify, render_template
 
-from webapp.webapp.lib.utils import read_ground_truth
-from webapp.webapp.lib.config import entities_batch_size
-from webapp.webapp.lib.utils import get_info
-from webapp.webapp.lib.graph import get_entity_network_sparql, get_network_sparql
-from webapp.webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
-from webapp.webapp.lib.render_queries import (
+from webapp.lib.utils import read_ground_truth
+from webapp.lib.config import entities_batch_size
+from webapp.lib.utils import get_info
+from webapp.lib.graph import get_entity_network_sparql, get_network_sparql
+from webapp.lib.cache import all_entities_info, all_parties_info, chave_publico
+from webapp.lib.render_queries import (
     party_vs_party,
     person_vs_party,
     party_vs_person,
@@ -17,7 +17,7 @@ from webapp.webapp.lib.render_queries import (
     get_stats,
 )
 
-from webapp.webapp.lib.sparql_queries import (
+from webapp.lib.sparql_queries import (
     get_entities_without_image,
     get_relationships_to_annotate,
     get_timeline_personalities,
@@ -346,12 +346,14 @@ def only_other():
     results = personalities_only_with_other()
     return render_template("incomplete_entities_no_rels.html", items=results)
 
+
 # new endpoints
 @app.route("/entity_raw")
 def entity_raw():
     wiki_id = request.args.get("q")
     data = entity_full_story(wiki_id, False)
     return jsonify(data)
+
 
 @app.route("/parties_raw")
 def all_parties_raw():
@@ -371,4 +373,4 @@ def timeline():
 
 if __name__ == "__main__":
     # app.run()
-    app.run(host="localhost", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=3000, debug=True)

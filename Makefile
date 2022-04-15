@@ -1,6 +1,6 @@
 dev:
 	docker build -t politiquices_webapp .
-	docker run -p 5000:5000 -it politiquices_webapp
+	docker run -p 3000:3000 -dit politiquices_webapp
 
 web:
 	. $${HOME}/politiquices_webapp_venv/bin/activate; \

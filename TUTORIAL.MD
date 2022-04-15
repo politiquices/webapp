@@ -16,6 +16,8 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
     # might need to udpate the webapp/lib/config.py file
     cd politiquices/webapp
     make web
+
+    # docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
   
 - Docker running: `webapp`
 

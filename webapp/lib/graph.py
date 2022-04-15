@@ -1,8 +1,8 @@
 from collections import defaultdict
 
-from webapp.webapp.lib.cache import wiki_id_info
-from webapp.webapp.lib.utils import get_short_name
-from webapp.webapp.lib.sparql_queries import query_sparql
+from webapp.lib.cache import wiki_id_info
+from webapp.lib.utils import get_short_name
+from webapp.lib.sparql_queries import query_sparql
 
 
 def get_entity_network_sparql(wiki_id, relation, freq_min, freq_max, year_from, year_to):
