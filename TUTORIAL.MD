@@ -30,8 +30,8 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
     # flask dev-server
     cd webapp 
     python app/politiquices_app.py
-
-    # sudo systemctl status politiquices
+    
+    sudo systemctl status politiquices
 
 
     # nginx
