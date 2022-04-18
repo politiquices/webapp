@@ -20,6 +20,6 @@ RUN python webapp/generate_caches.py
 # configure the container to run in an executed manner
 # ENTRYPOINT [ "/bin/sh" ]
 
-EXPOSE 3000
+EXPOSE 5030
 
 CMD python webapp/app/politiquices_app.py

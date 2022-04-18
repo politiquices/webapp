@@ -31,6 +31,9 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
     cd webapp 
     python app/politiquices_app.py
 
+    # sudo systemctl status politiquices
+
+
     # nginx
     screen -SU
     cd /home/dsbatista/webapp/webapp
