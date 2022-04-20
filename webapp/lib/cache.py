@@ -1,4 +1,7 @@
 import json
+import os
+
+print("curr. dir: ", os.getcwd())
 
 # load all static generated caching stuff
 with open("app/static/json/all_entities_info.json") as f_in:
