@@ -1,6 +1,6 @@
 # ToDo: need to get IP dynamically
-sparql_endoint = "http://172.17.0.2:3030"
-# sparql_endoint = "http://0.0.0.0:3030"
+# sparql_endoint = "http://172.17.0.2:3030"
+sparql_endoint = "http://0.0.0.0:3030"
 wikidata_endpoint = f"{sparql_endoint}/wikidata/query"
 politiquices_endpoint = f"{sparql_endoint}/politiquices/query"
 live_wikidata = "https://query.wikidata.org/sparql"

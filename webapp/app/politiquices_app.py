@@ -55,7 +55,6 @@ def load_entities():
 @app.route("/entity")
 def detail_entity():
     # get args
-    print(request.args)
     from_search = bool("search" in request.args)
     annotate = bool("annotate" in request.args)
     wiki_id = request.args.get("q")
@@ -178,7 +177,6 @@ def entity_versus_entity():
 
 @app.route("/queries")
 def queries():
-    print(request.args)
     # entity and relationship args
     entity_one = request.args.get("e1")
     entity_two = request.args.get("e2")
@@ -373,8 +371,4 @@ def timeline():
 
 
 if __name__ == "__main__":
-
-
-
-
-    app.run(host="0.0.0.0", port=5030, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
