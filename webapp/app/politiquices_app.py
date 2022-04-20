@@ -188,6 +188,7 @@ def queries():
 
     # which type of rendering ?
     annotate = bool("annotate")
+    annotate = False
 
     # time interval for the query
     year_from = request.args.get("year_from")
