@@ -1,38 +1,15 @@
 ## Launch WebApp
 
-### 1 SPARQL endpoint
+### SPARQL endpoint
     
-Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
-- `politiquices.ttl`
-- `wikidata_org.ttl.bz2`
+	Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
+	- `politiquices.ttl`
+	- `wikidata_org.ttl.bz2`
 
-      cd politiquices/SPARQL-endpoint
-      make sparql
+    cd politiquices/SPARQL-endpoint
+    make sparql
 
-- Docker running: `fuseki-docker`
-
-### 2 Launch Web server
-
-    # might need to udpate the webapp/lib/config.py file
-    cd politiquices/webapp
-    make web
-
-    # docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
-  
-- Docker running: `webapp`
-
-    # without Docker
-    check `lib/config.py`
-    cd politiquices/webapp/webapp
-    python generate_caches.py
-    cp static/json/CHAVE-Publico_94_95.jsonl
-    
-    # flask dev-server
-    cd webapp 
-    python app/politiquices_app.py
-    
-    sudo systemctl status politiquices
-
+### Launch Web server
 
     # nginx
     screen -SU
@@ -40,8 +17,7 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
 
     sudo systemctl restart nginx
 
-    # https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-20-04
-    
+    # see: https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-20-04
     # Runs on port 5000 as an example
     # PYTHONPATH=/home/dsbatista uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app
     
