@@ -50,16 +50,3 @@ Make sure both .ttl files are in /SPARQL-endpoint/fuseki-docker/fuseki-data
 
     # nginx redirects http:80/443 to this local socket, config:
     /etc/nginx/sites-available/politiquices
-
-    ufw firewall
- 
-    https://larsee.com/blog/2020/06/awstats-on-ubuntu-20-04-with-nginx/
-    
-
-    
-    
-    
-
-
-
-
